@@ -1,7 +1,7 @@
 # Audit: User input should not directly be used in network calls
-**ID:** `JAVA-A1034` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1034)
+**ID:** `JAVA-A1034` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1034)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Avoid using unsanitized data from sources like incoming requests or sockets in network calls.
 

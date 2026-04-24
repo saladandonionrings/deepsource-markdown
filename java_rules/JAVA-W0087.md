@@ -1,7 +1,7 @@
 # Finalizer nulls fields
-**ID:** `JAVA-W0087` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0087)
+**ID:** `JAVA-W0087` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0087)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This finalizer nulls out fields.
 

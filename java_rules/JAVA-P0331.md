@@ -1,7 +1,7 @@
 # `Pattern.compile()` should not be called in a loop
-**ID:** `JAVA-P0331` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P0331)
+**ID:** `JAVA-P0331` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P0331)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Performance](https://img.shields.io/badge/type-performance-white)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Performance](https://img.shields.io/badge/type-performance-white)
 
 This method calls `Pattern.compile()` inside a loop with constant arguments. If this `Pattern` will be used several times, there's no reason to compile it on each loop iteration.
 

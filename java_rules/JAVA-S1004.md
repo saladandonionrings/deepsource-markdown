@@ -1,7 +1,7 @@
 # CBC and ECB modes are insecure
-**ID:** `JAVA-S1004` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1004)
+**ID:** `JAVA-S1004` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1004)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 `ECB` and `CBC` encryption modes are both known to be insecure due to a number of attacks that they make possible. As the default encryption mode in Java is ECB, this issue will be raised if only the algorithm is specified in a cipher transformation.
 

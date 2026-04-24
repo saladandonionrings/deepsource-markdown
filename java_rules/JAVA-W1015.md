@@ -1,13 +1,13 @@
 # Random instances should be reused
-**ID:** `JAVA-W1015` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1015)
+**ID:** `JAVA-W1015` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1015)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Creating a new instance of `java.util.Random` every time a random value is required is wasteful. In addition, the randomness of the values produced is reduced due to increased predictability of the random number generation.
 
 Store a single `Random` instance and reuse it for best effect.
 
-As per the JavaDocs for [`java.util.Random`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html):
+As per the JavaDocs for [ `java.util.Random` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html) :
 
 If two instances of Random are created with the same seed, and the same sequence of method calls is made for each, they will generate and return identical sequences of numbers.
 
@@ -39,11 +39,11 @@ int someInt = rng.nextInt();
 
 boolean someBool = rng.nextBoolean();
 ```
-Another option is to use [`Math.random()`](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#random--), which is a readily available static method that returns a random `double` value in the range`0.0 <= x < 1.0`.
+Another option is to use [ `Math.random()` ](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#random--) , which is a readily available static method that returns a random `double` value in the range `0.0 <= x < 1.0` .
 
 
 ```java
 int someInt = (int)(Math.random() * 100) % 10; // gets a random number in the range 0-10
 ```
-**Note**: While the Oracle and OpenJDK implementations of `Random` are thread-safe, it is not recommended to rely on this fact. Consider using `Math.random()`, or create a `Random` instance for each thread if you need RNG across multiple threads. Keeping per-thread instances will avoid the performance penalty of synchronization that `Math.random()` could suffer from.
+**Note** : While the Oracle and OpenJDK implementations of `Random` are thread-safe, it is not recommended to rely on this fact. Consider using `Math.random()` , or create a `Random` instance for each thread if you need RNG across multiple threads. Keeping per-thread instances will avoid the performance penalty of synchronization that `Math.random()` could suffer from.
 

@@ -1,9 +1,9 @@
 # Concrete collection type used in method declaration
-**ID:** `JAVA-W1065` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1065)
+**ID:** `JAVA-W1065` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1065)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
-Concrete collection types (such as `ArrayList`, `HashMap`, etc.) should not be used in a `public` method's signature.
+Concrete collection types (such as `ArrayList` , `HashMap` , etc.) should not be used in a `public` method's signature.
 
 Java encourages the use of abstract types/interfaces at the API boundary over concrete types. This helps one design generic APIs that are easy to modify and extend.
 

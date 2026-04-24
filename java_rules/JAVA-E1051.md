@@ -1,7 +1,7 @@
 # Synchronizing on a mutable reference may lead to unexpected behavior
-**ID:** `JAVA-E1051` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1051)
+**ID:** `JAVA-E1051` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1051)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This method is attempting to synchronize on a field whose value may change. This is very dangerous and may easily lead to difficult to diagnose bugs.
 
@@ -32,7 +32,7 @@ In the above code, `monotonicCounter` points to a new object each time `countUp(
 
 
 ## Recommended
-Use a dedicated object for synchronization purposes, and declare that object as `private final`:
+Use a dedicated object for synchronization purposes, and declare that object as `private final` :
 
 
 ```java

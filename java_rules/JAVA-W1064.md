@@ -1,7 +1,7 @@
 # Redundant boolean literal
-**ID:** `JAVA-W1064` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1064)
+**ID:** `JAVA-W1064` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1064)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Boolean literals should not be used redundantly within expressions.
 

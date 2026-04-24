@@ -1,7 +1,7 @@
 # XMLStreamReaders must be secure
-**ID:** `JAVA-S1009` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1009)
+**ID:** `JAVA-S1009` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1009)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 This code appears to create an XMLStreamReader using an XMLInputFactory instance without setting the correct input processing flags. This could allow XML External Entity (XXE) attacks to easily occur.
 
@@ -16,9 +16,9 @@ To put into perspective how XXE attacks can cause damage, consider the following
    <!ENTITY xxe SYSTEM "file:///etc/passwd" > ]>
 <foo>&xxe;</foo>
 ```
-The example above uses XML's DTD syntax to define an XML entity whose data is present outside the XML file (it is therefore an Xml eXternal Entity). That entity (`&xxe` here) is then used as the value of an XML element, `<foo>`.
+The example above uses XML's DTD syntax to define an XML entity whose data is present outside the XML file (it is therefore an Xml eXternal Entity). That entity ( `&xxe` here) is then used as the value of an XML element, `<foo>` .
 
-It so happens that the value of the external entity is specified to be the `/etc/passwd` file of the local machine, which is in general private information which must not be shared, leave alone accessed by the server process in any way. If an attacker could upload a malicious XML file with this particular declaration in it, the resulting XML file when parsed will also evaluate the external entity, and by extension, load the contents of `/etc/passwd`.
+It so happens that the value of the external entity is specified to be the `/etc/passwd` file of the local machine, which is in general private information which must not be shared, leave alone accessed by the server process in any way. If an attacker could upload a malicious XML file with this particular declaration in it, the resulting XML file when parsed will also evaluate the external entity, and by extension, load the contents of `/etc/passwd` .
 
 If the resultant data can be downloaded by the attacker again by some means, we would have described a successful data exfilteration attack.
 

@@ -1,7 +1,7 @@
 # Synchronization on a nonfinal field is dangerous and error-prone
-**ID:** `JAVA-S0154` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0154)
+**ID:** `JAVA-S0154` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0154)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This method synchronizes on an object referenced from a mutable field. This can lead to concurrency bugs because different threads may end up synchronizing on different objects.
 

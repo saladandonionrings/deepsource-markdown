@@ -1,7 +1,7 @@
 # Switch case without appropriate control flow break
-**ID:** `JAVA-A1068` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1068)
+**ID:** `JAVA-A1068` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1068)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This switch case does not terminate in a `break` or other such control flow statement. This can result in accidental switch case fallthrough, unintentionally executing code.
 

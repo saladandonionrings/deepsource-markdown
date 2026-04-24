@@ -1,7 +1,7 @@
 # Public fields should not be synchronized on
-**ID:** `JAVA-E1061` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1061)
+**ID:** `JAVA-E1061` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1061)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This code uses a public value as the monitor in a `synchronized` block.
 

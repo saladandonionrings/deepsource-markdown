@@ -1,7 +1,7 @@
 # Use `existsById` instead of `findById` to check for the existence of an entity
-**ID:** `JAVA-W1090` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1090)
+**ID:** `JAVA-W1090` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1090)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Use `existsById()` instead of `findById()` if you are calling `findById()` for the sole purpose of checking for the existence of an entity in the repository.
 

@@ -1,7 +1,7 @@
 # Test files should contain tests
-**ID:** `JAVA-W1088` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1088)
+**ID:** `JAVA-W1088` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1088)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Classes that look like test cases should contain tests.
 
@@ -9,7 +9,12 @@ This issue is reported when a file within a test directory looks like a test fil
 
 This issue will be reported if no symbols related to any of the following frameworks are found:
 
-* Junit 3* Junit 4* Junit 5* TestNG* ArchUnit
+* Junit 3
+* Junit 4
+* Junit 5
+* TestNG
+* ArchUnit
+
 
 ## Bad Practice
 Avoid declaring classes that seem like tests but don't contain any test cases.

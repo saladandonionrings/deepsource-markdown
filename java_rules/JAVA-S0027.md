@@ -1,7 +1,7 @@
 # Elements accessed from volatile reference to an array are not volatile
-**ID:** `JAVA-S0027` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0027)
+**ID:** `JAVA-S0027` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0027)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 A volatile reference to an array doesn't treat the array elements as volatile.
 
@@ -23,7 +23,7 @@ AtomicIntegerArray good = new AtomicIntegerArray(10);
 ```
 Using atomic classes is a good way to guarantee that all memory accesses across threads are coherent. However, because of the performance overhead, ensure that you absolutely need the concurrency guarantees before you use them.
 
-It must be noted that an array of `AtomicInteger`s (`AtomicInteger[]`) is not the same as a single `AtomicIntegerArray`; the former is more prone to breakage and is a bad idea in general. `AtomicIntegerArray` stores ordinary integers and allows thread-safe access to them. An array of `AtomicInteger`s is a non-thread-safe data structure holding references to thread-safe integers.
+It must be noted that an array of `AtomicInteger` s ( `AtomicInteger[]` ) is not the same as a single `AtomicIntegerArray` ; the former is more prone to breakage and is a bad idea in general. `AtomicIntegerArray` stores ordinary integers and allows thread-safe access to them. An array of `AtomicInteger` s is a non-thread-safe data structure holding references to thread-safe integers.
 
 
 ## Recommended

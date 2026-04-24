@@ -1,7 +1,7 @@
 # Collection and array length checks must be sensible
-**ID:** `JAVA-W1005` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1005)
+**ID:** `JAVA-W1005` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1005)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A comparison involving the size of a collection or an array was found, which is always guaranteed to be either true or false.
 

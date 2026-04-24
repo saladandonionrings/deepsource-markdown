@@ -1,9 +1,9 @@
 # `Iterable` objects must not return `this` in `iterator()` method
-**ID:** `JAVA-E1015` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1015)
+**ID:** `JAVA-E1015` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1015)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-Do not return `this` in the `iterator()` method of a type that implements `java.lang.Iterable<T>`.
+Do not return `this` in the `iterator()` method of a type that implements `java.lang.Iterable<T>` .
 
 <!-more-->
 
@@ -11,7 +11,7 @@ Do not return `this` in the `iterator()` method of a type that implements `java.
 
 `java.util.Iterator<T>` represents a stateful "cursor" over an iterable collection. It can only be iterated over once.
 
-If you need to attach an [`Iterator`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html) API to an `Iterable` structure, one way to do so would be to have the type implement both `Iterable` and `Iterator`, and return `this` in the [`iterator()`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#iterator()) method:
+If you need to attach an [ `Iterator` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html) API to an `Iterable` structure, one way to do so would be to have the type implement both `Iterable` and `Iterator` , and return `this` in the [ `iterator()` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#iterator()) method:
 
 
 ```java
@@ -55,9 +55,9 @@ for (T j : si) {
     // ...
 }
 ```
-The second loop will never execute! This is because once the first loop finishes, the internal index variable `idx` is equal to the length of the internal array `inner`. The `hasNext()` method will always return `false` and thus the second loop will never execute.
+The second loop will never execute! This is because once the first loop finishes, the internal index variable `idx` is equal to the length of the internal array `inner` . The `hasNext()` method will always return `false` and thus the second loop will never execute.
 
-In certain cases such behavior is desirable: consider [`java.nio.file.DirectoryStream`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html). `DirectoryStream` is an `Iterable` over file paths that is intended to only be traversed once. It does so by ensuring that the `iterator()` method will always throw an exception after it is first called.
+In certain cases such behavior is desirable: consider [ `java.nio.file.DirectoryStream` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html) . `DirectoryStream` is an `Iterable` over file paths that is intended to only be traversed once. It does so by ensuring that the `iterator()` method will always throw an exception after it is first called.
 
 
 ```java
@@ -74,7 +74,7 @@ for (Path reEntry : ds) {
 
 ds.close();
 ```
-Always return a fresh `Iterator` instance when implementing `Iterable<T>.iterator()`.
+Always return a fresh `Iterator` instance when implementing `Iterable<T>.iterator()` .
 
 
 ## Bad Practice

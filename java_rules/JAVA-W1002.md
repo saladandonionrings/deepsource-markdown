@@ -1,9 +1,9 @@
 # Exceptions must not be thrown in finalizers
-**ID:** `JAVA-W1002` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1002)
+**ID:** `JAVA-W1002` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1002)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
-Finalizers (`finally` blocks) are used to perform cleanup after a try-catch block has executed, regardless of whether an exception was previously thrown. Throwing an exception within a finalizer will essentially discard any previously thrown exception, meaning all existing context on the original exception will be lost from that point onwards. This will make bugs difficult to detect, and must be avoided.
+Finalizers ( `finally` blocks) are used to perform cleanup after a try-catch block has executed, regardless of whether an exception was previously thrown. Throwing an exception within a finalizer will essentially discard any previously thrown exception, meaning all existing context on the original exception will be lost from that point onwards. This will make bugs difficult to detect, and must be avoided.
 
 
 ## Bad Practice

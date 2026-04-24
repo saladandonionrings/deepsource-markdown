@@ -1,7 +1,7 @@
 # Redundant cast of return value
-**ID:** `JAVA-W1067` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1067)
+**ID:** `JAVA-W1067` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1067)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 The return value of a method call should not be cast if it is used in an expression that expects a value of the same type that the method is returning.
 

@@ -1,7 +1,7 @@
 # Detected synchronization on string literal
-**ID:** `JAVA-E1081` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1081)
+**ID:** `JAVA-E1081` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1081)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Avoid synchronizing on string literals.
 

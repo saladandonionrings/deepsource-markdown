@@ -1,7 +1,7 @@
 # Audit: Hibernate query may be vulnerable to injection attacks
-**ID:** `JAVA-A1040` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1040)
+**ID:** `JAVA-A1040` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1040)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Avoid creating Hibernate SQL queries with strings containing unsanitized input.
 
@@ -20,7 +20,7 @@ List<LoginInfo> infoList = sessionFactory.getCurrentSession().createQuery("from 
 ```
 
 ## Recommended
-Make sure to properly parameterize data in queries to prevent such issues. If you wish to safely specify things like column names or even entity types, consider using the [`Criteria`](https://docs.jboss.org/hibernate/annotations/3.5/api/org/hibernate/Criteria.html) API to do so:
+Make sure to properly parameterize data in queries to prevent such issues. If you wish to safely specify things like column names or even entity types, consider using the [ `Criteria` ](https://docs.jboss.org/hibernate/annotations/3.5/api/org/hibernate/Criteria.html) API to do so:
 
 
 ```java

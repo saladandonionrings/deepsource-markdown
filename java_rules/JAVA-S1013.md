@@ -1,7 +1,7 @@
 # RSA without padding is insecure
-**ID:** `JAVA-S1013` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1013)
+**ID:** `JAVA-S1013` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1013)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 This code creates a `javax.crypto.Cipher` instance using the RSA algorithm with no padding. This is a security risk, and must be avoided.
 

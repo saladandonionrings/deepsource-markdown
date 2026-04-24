@@ -1,7 +1,7 @@
 # Custom hashing algorithms must not be used
-**ID:** `JAVA-S1008` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1008)
+**ID:** `JAVA-S1008` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1008)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Implementing a custom hashing algorithm can be error-prone and could allow for collision-based attacks on hashed data. Avoid implementing your own hash function, and use only trusted implementations.
 

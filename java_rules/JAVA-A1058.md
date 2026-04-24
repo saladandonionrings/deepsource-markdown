@@ -1,7 +1,7 @@
 # Audit: Amazon SimpleDB queries should not be susceptible to injection attacks
-**ID:** `JAVA-A1058` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1058)
+**ID:** `JAVA-A1058` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1058)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Amazon SimpleDB queries should not be constructed using unvalidated external data.
 

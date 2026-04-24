@@ -1,7 +1,7 @@
 # Unnecessary imports detected
-**ID:** `JAVA-W1069` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1069)
+**ID:** `JAVA-W1069` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1069)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Unused imports should be removed from all source files.
 

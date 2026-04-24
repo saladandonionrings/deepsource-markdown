@@ -1,7 +1,7 @@
 # `equals` checks for incompatible operand
-**ID:** `JAVA-W0095` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0095)
+**ID:** `JAVA-W0095` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0095)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This `equals` method is checking to see if the argument is some incompatible type (i.e., a class that is neither a supertype nor subtype of the class that defines the `equals` method).
 

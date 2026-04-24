@@ -1,7 +1,7 @@
 # `synchronized` block is empty
-**ID:** `JAVA-W0151` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0151)
+**ID:** `JAVA-W0151` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0151)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 The code contains an empty synchronized block. This could confuse readers of this code later.
 
@@ -11,9 +11,9 @@ An empty `synchronized` block seems a bit superfluous at first:
 ```java
 synchronized(...) {}
 ```
-This construct can still be useful though; it can work as a simple write-before-read memory barrier without using volatile variables due to the synchronization guarantees that `synchronized` blocks provide. However, this way of using `synchronized` blocks may not be as easily understood as a more explicit mechanism such as a `Semaphore`.
+This construct can still be useful though; it can work as a simple write-before-read memory barrier without using volatile variables due to the synchronization guarantees that `synchronized` blocks provide. However, this way of using `synchronized` blocks may not be as easily understood as a more explicit mechanism such as a `Semaphore` .
 
-If this was intended, make sure to document the usage, or rewrite it to make things clearer using abstractions such as `Semaphore`s.
+If this was intended, make sure to document the usage, or rewrite it to make things clearer using abstractions such as `Semaphore` s.
 
 
 ## Bad Practice

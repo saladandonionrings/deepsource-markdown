@@ -1,15 +1,15 @@
 # Inefficient `OutputStream` implementation
-**ID:** `JAVA-P1002` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P1002)
+**ID:** `JAVA-P1002` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P1002)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Performance](https://img.shields.io/badge/type-performance-white)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Performance](https://img.shields.io/badge/type-performance-white)
 
-This class appears to inherit the `write(byte[], int, int)` method from `java.io.OutputStream` or `java.io.FilterOutputStream`, which renders it an inefficient implementation.
+This class appears to inherit the `write(byte[], int, int)` method from `java.io.OutputStream` or `java.io.FilterOutputStream` , which renders it an inefficient implementation.
 
 Always override `write(byte[], int, int)` suitably when inheriting from these types to avoid using an inefficient implementation.
 
 The default implementation of the array based `write` methods in `OutputStream` and `FilterOutputStream` just call the `write(int)` method in a loop.
 
-Taken from `java.io.OutputStream`'s source code:
+Taken from `java.io.OutputStream` 's source code:
 
 
 ```java

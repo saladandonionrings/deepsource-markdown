@@ -1,7 +1,7 @@
 # Local variables should not be assigned in return statements
-**ID:** `JAVA-W1037` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1037)
+**ID:** `JAVA-W1037` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1037)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A local variable is being assigned within a return statement. This may be either a typo in a comparison or an unnecessary operation.
 

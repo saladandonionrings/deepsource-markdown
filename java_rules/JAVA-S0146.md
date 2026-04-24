@@ -1,9 +1,9 @@
 # Iterator `next` method must throw `NoSuchElementException`
-**ID:** `JAVA-S0146` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0146)
+**ID:** `JAVA-S0146` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0146)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
-This class implements the `java.util.Iterator` interface. However, its `next()` method is not capable of throwing `java.util.NoSuchElementException`.
+This class implements the `java.util.Iterator` interface. However, its `next()` method is not capable of throwing `java.util.NoSuchElementException` .
 
 This is a violation of the `Iterator` interface's contract, and will not work with code that expects `next()` to throw when the iterator is exhausted.
 

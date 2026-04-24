@@ -1,7 +1,7 @@
 # Finalizers are deprecated since Java 9
-**ID:** `JAVA-W0088` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0088)
+**ID:** `JAVA-W0088` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0088)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Finalizers have been deprecated since Java 9. They are unreliable at best and can cause performance problems and even race conditions in certain cases. Remove the finalizer from your code if possible
 

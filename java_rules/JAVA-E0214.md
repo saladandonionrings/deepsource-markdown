@@ -1,7 +1,7 @@
 # For loop appears to check one variable and increment another
-**ID:** `JAVA-E0214` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0214)
+**ID:** `JAVA-E0214` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0214)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 There is a complicated, subtle or wrong increment in this `for` loop. It appears that the variable being checked in the loop's condition is not the same as the one being updated.
 

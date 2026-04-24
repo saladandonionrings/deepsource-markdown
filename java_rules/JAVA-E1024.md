@@ -1,7 +1,7 @@
 # Non-thread-safe date/time fields should not be public and static
-**ID:** `JAVA-E1024` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1024)
+**ID:** `JAVA-E1024` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1024)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Avoid storing non-thread-safe `java.util` date/time API classes in public static fields.
 
@@ -9,12 +9,14 @@ These classes are not designed to be used directly over multiple threads and iss
 
 This issue will be reported if a `public static` field is found having any of the following types:
 
-* [`java.util.Calendar`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Calendar.html)* [`java.text.SimpleDateFormat`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/SimpleDateFormat.html#synchronization)
+* [ `java.util.Calendar` ](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Calendar.html)
+* [ `java.text.SimpleDateFormat` ](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/SimpleDateFormat.html#synchronization)
+
 `Calendar` is particularly insidious in this, as its documentation makes no mention of its lack of thread safety.
 
 
 ## Bad Practice
-Consider the example below, which uses `Calendar` (the same principle applies to `SimpleDateFormat` as well). Because `CAL_INSTANCE` is `public`, it can be accessed by any external code.
+Consider the example below, which uses `Calendar` (the same principle applies to `SimpleDateFormat` as well). Because `CAL_INSTANCE` is `public` , it can be accessed by any external code.
 
 
 ```java
@@ -24,7 +26,7 @@ Modifying (or even accessing fields of) a `Calendar` instance will mutate it, an
 
 
 ## Recommended
-If a single global `Calendar` instance is absolutely required, make sure to keep the field `private`, and predefine all possible actions that will be performed with the object as synchronized methods. This reduces the chances of race conditions occurring due to unsynchronized usage of the specific calendar instance.
+If a single global `Calendar` instance is absolutely required, make sure to keep the field `private` , and predefine all possible actions that will be performed with the object as synchronized methods. This reduces the chances of race conditions occurring due to unsynchronized usage of the specific calendar instance.
 
 
 ```java
@@ -50,5 +52,5 @@ If a global instance is not required, just use an instance value, or create a ne
 
 **Alternatives**
 
-If possible, consider using a better date/time API such as [`java.time`](https://www.oracle.com/technical-resources/articles/java/jf14-date-time.html) (For Java versions 8 and above) or [Joda-time](https://www.joda.org/joda-time/) (For Java versions 7 and below), which do not have such thread safety issues.
+If possible, consider using a better date/time API such as [ `java.time` ](https://www.oracle.com/technical-resources/articles/java/jf14-date-time.html) (For Java versions 8 and above) or [Joda-time](https://www.joda.org/joda-time/) (For Java versions 7 and below), which do not have such thread safety issues.
 

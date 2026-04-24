@@ -1,7 +1,7 @@
 # Method and field names must be dissimilar
-**ID:** `JAVA-W1006` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1006)
+**ID:** `JAVA-W1006` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1006)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This class's method names are the same as its field names, or differ from the field names only in terms of capitalization. This will cause confusion when reading the code, and will also decrease readability.
 

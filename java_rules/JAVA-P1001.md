@@ -1,7 +1,7 @@
 # Use `String.replace()` instead of `String.replaceAll()` for simple text patterns
-**ID:** `JAVA-P1001` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P1001)
+**ID:** `JAVA-P1001` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P1001)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Performance](https://img.shields.io/badge/type-performance-white)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Performance](https://img.shields.io/badge/type-performance-white)
 
 `String.replaceAll()` is a method that accepts a regex string, and replaces all occurrences of the regex with the provided replacement string.
 

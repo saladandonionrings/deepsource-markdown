@@ -1,7 +1,7 @@
 # Overwriting a method parameter will not modify the original object
-**ID:** `JAVA-S0352` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0352)
+**ID:** `JAVA-S0352` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0352)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This method ignores the original value of a parameter and attempts to assign a new value to it.
 

@@ -1,7 +1,7 @@
 # Useless unboxing of a value
-**ID:** `JAVA-W1052` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1052)
+**ID:** `JAVA-W1052` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1052)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Performance](https://img.shields.io/badge/type-performance-white)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Performance](https://img.shields.io/badge/type-performance-white)
 
 A boxed value is unboxed and then immediately reboxed. This has likely occurred due to an unboxing operation by the programmer, which the java compiler has undone.
 
@@ -29,7 +29,7 @@ invokevirtual #13                 // Call instance method `Integer.intValue()` o
 invokestatic  #7                  // Call static method `Integer.valueOf()` with the result of `intValue()`
 invokestatic  #23                 // Call instance method `acceptsInteger()`
 ```
-Note two contradicting method calls: this code calls `Integer.intValue()` immediately followed by `Integer.valueOf()`.
+Note two contradicting method calls: this code calls `Integer.intValue()` immediately followed by `Integer.valueOf()` .
 
 
 ## Recommended

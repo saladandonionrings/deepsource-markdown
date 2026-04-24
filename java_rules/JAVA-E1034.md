@@ -1,9 +1,9 @@
 # Serializable class with non-serializable superclass and no default constructor detected
-**ID:** `JAVA-E1034` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1034)
+**ID:** `JAVA-E1034` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1034)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-This serializable class has a non-serializable superclass that does not declare a default constructor. Deserializing such a class will fail with an [`InvalidClassException`](https://docs.oracle.com/javase/8/docs/api/java/io/InvalidClassException.html) because Java will not be able to instantiate it.
+This serializable class has a non-serializable superclass that does not declare a default constructor. Deserializing such a class will fail with an [ `InvalidClassException` ](https://docs.oracle.com/javase/8/docs/api/java/io/InvalidClassException.html) because Java will not be able to instantiate it.
 
 Java's `Serializable` interface enforces specific requirements on serializable classes that extend a non-serializable class:
 

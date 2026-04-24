@@ -1,7 +1,7 @@
 # Persistent objects should not be returned from methods
-**ID:** `JAVA-S1066` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1066)
+**ID:** `JAVA-S1066` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1066)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Returning persistent objects from methods should be avoided as much as possible.
 

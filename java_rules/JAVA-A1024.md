@@ -1,7 +1,7 @@
 # Audit: Unsafe Jackson deserialization configurations should not be used
-**ID:** `JAVA-A1024` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1024)
+**ID:** `JAVA-A1024` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1024)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Security](https://img.shields.io/badge/type-security-red)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Security](https://img.shields.io/badge/type-security-red)
 
 Using features such as `@JsonTypeInfo(use = JsonTypeInfo.Id.CLASS)` or `ObjectMapper.enableDefaultTyping()` with Jackson can be a security risk, as such configurations are stepping stones towards a successful exploit.
 
@@ -13,7 +13,7 @@ Jackson has faced a [number](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 
 
 ## Bad Practice
-This isssue will be raised if a class uses the `@JsonTypeInfo` annotation with the `use` value set to `Id.CLASS` or `Id.MINIMAL_CLASS`.
+This isssue will be raised if a class uses the `@JsonTypeInfo` annotation with the `use` value set to `Id.CLASS` or `Id.MINIMAL_CLASS` .
 
 
 ```java
@@ -31,7 +31,7 @@ mapper.enableDefaultTyping();
 ```
 
 ## Recommended
-Use `@JsonTypeInfo(use = Id.NAME)`, along with `@JsonTypeName` as well as `JsonSubTypes` to allow polymorphic type handling.
+Use `@JsonTypeInfo(use = Id.NAME)` , along with `@JsonTypeName` as well as `JsonSubTypes` to allow polymorphic type handling.
 
 
 ```java

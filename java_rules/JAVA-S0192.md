@@ -1,7 +1,7 @@
 # Serializable class with non-serializable super class having no void constructor detected
-**ID:** `JAVA-S0192` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0192)
+**ID:** `JAVA-S0192` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0192)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This class implements the Serializable interface and its superclass does not.
 

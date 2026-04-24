@@ -1,7 +1,7 @@
 # Public static method returns freely modifiable array that may expose internal state
-**ID:** `JAVA-S0131` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0131)
+**ID:** `JAVA-S0131` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0131)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Security](https://img.shields.io/badge/type-security-red)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Security](https://img.shields.io/badge/type-security-red)
 
 A public static method returns a reference to an array that is part of the static state of the class. Any code that calls this method can freely modify the underlying array.
 

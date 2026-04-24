@@ -1,7 +1,7 @@
 # Sequence of operations on a concurrent abstraction may not be atomic
-**ID:** `JAVA-S0447` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0447)
+**ID:** `JAVA-S0447` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0447)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This code contains a sequence of calls to a concurrent abstraction (such as a concurrent hash map). These calls will not be executed atomically.
 
@@ -22,7 +22,7 @@ m.get(4);
 ```
 
 ## Recommended
-It's better to use synchronization (not necessarily with `synchronized`) to achieve atomicity:
+It's better to use synchronization (not necessarily with `synchronized` ) to achieve atomicity:
 
 
 ```java

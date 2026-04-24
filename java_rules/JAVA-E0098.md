@@ -1,7 +1,7 @@
 # `equals` method is overloaded but not overridden
-**ID:** `JAVA-E0098` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0098)
+**ID:** `JAVA-E0098` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0098)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This class defines a version of the `equals` method which does not take an `Object` as its parameter, meaning it overloads the original `Object.equals(Object)` method instead of overriding it. Standard library collections will behave unexpectedly when handling values of this type.
 

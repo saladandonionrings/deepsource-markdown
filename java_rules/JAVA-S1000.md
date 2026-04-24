@@ -1,7 +1,7 @@
 # Overly permissive CORS policies are a security risk
-**ID:** `JAVA-S1000` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1000)
+**ID:** `JAVA-S1000` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1000)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 An overly permissive CORS policy can allow malicious actors to retrieve sensitive data from your own servers through the client.
 

@@ -1,13 +1,13 @@
 # Possible null access
-**ID:** `JAVA-E1083` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1083)
+**ID:** `JAVA-E1083` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1083)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This code contains a possible null pointer dereference. Double-check the code to ensure that the concerned variable always has a non-null value when accessed.
 
 
 ## Bad Practice
-In the example below, if `someCondition` is true, it is possible for `value` to be null when it reaches the assignment of `valLen`.
+In the example below, if `someCondition` is true, it is possible for `value` to be null when it reaches the assignment of `valLen` .
 
 
 ```java

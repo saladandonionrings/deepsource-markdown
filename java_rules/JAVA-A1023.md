@@ -1,7 +1,7 @@
 # Audit: Broadcasting intents without specifying a target package or receiver permission may be a security risk
-**ID:** `JAVA-A1023` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1023)
+**ID:** `JAVA-A1023` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1023)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Intents that contain sensitive information should only be broadcast as explicit intents with tight control on what activities may receive them.
 
@@ -28,12 +28,14 @@ context.sendBroadcast(withSecurityInfo, null);
 ## Recommended
 * **Use explicit intents**
 
+
 ```java
 Intent explicit = new Intent(this, SomeComponent.class); // We now provide a specific class that is the intended recipient.
 
 context.sendBroadcast(explicit);
 ```
 * **Use intents with package filters**
+
 
 ```java
 Intent withPkgFilter = new Intent(...);

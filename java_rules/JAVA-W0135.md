@@ -1,7 +1,7 @@
 # Invoking a `Runnable` object's `run` method will perform the task in the current thread, not a new one
-**ID:** `JAVA-W0135` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0135)
+**ID:** `JAVA-W0135` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0135)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 The `run` method of the referenced `Thread` was invoked. Did you mean to invoke `start` instead?
 

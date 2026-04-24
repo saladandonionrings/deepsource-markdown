@@ -1,7 +1,7 @@
 # Nullable value stored to non-null field
-**ID:** `JAVA-E1071` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1071)
+**ID:** `JAVA-E1071` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1071)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 A value that could be null is stored into a field that has been annotated as `@Nonnull` or any similar annotation.
 

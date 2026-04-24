@@ -1,7 +1,7 @@
 # C style array declaration syntax must not be used
-**ID:** `JAVA-C1000` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-C1000)
+**ID:** `JAVA-C1000` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-C1000)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Style](https://img.shields.io/badge/type-style-blue)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Style](https://img.shields.io/badge/type-style-blue)
 
 Java arrays should not be declared using C-style array declaration syntax.
 

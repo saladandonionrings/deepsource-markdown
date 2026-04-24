@@ -1,7 +1,7 @@
 # Switch blocks must not contain statement labels
-**ID:** `JAVA-E1005` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1005)
+**ID:** `JAVA-E1005` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1005)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This `switch` block mixes `case` directives with statement labels. This is confusing at best, and in the worst case, may introduce bugs in your code.
 
@@ -27,7 +27,7 @@ outer: switch (index) {
     default:
 };
 ```
-According to the JLS, [Section 14.7](https://docs.oracle.com/javase/specs/jls/se16/html/jls-14.html#jls-14.7):
+According to the JLS, [Section 14.7](https://docs.oracle.com/javase/specs/jls/se16/html/jls-14.html#jls-14.7) :
 
 ... There is no restriction against using the same identifier as a label and as the name of a package, class, interface, method, field, parameter, or local variable. ...
 
@@ -52,7 +52,7 @@ switch (month) {
     default: // ...
 };
 ```
-In the switch block above, `MARCH` may have been intended as a value that would match against `month`. Unfortunately, because it was not marked as a `case` clause, `MARCH` will instead be interpreted as a statement label that appears as part of the `FEBRUARY` case clause.
+In the switch block above, `MARCH` may have been intended as a value that would match against `month` . Unfortunately, because it was not marked as a `case` clause, `MARCH` will instead be interpreted as a statement label that appears as part of the `FEBRUARY` case clause.
 
 
 ```java

@@ -1,9 +1,9 @@
 # Class defines `clone` but does not inherit from `Cloneable`
-**ID:** `JAVA-S0047` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0047)
+**ID:** `JAVA-S0047` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0047)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
-This class defines a `clone` method but it doesn't implement `Cloneable`.
+This class defines a `clone` method but it doesn't implement `Cloneable` .
 
 This may lead to unexpected behavior of the class when cloned because the `clone` method may not rely on `Object.clone` or any superclass implementation of it to perform certain necessary operations.
 

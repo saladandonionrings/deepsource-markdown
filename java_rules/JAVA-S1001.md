@@ -1,7 +1,7 @@
 # Servlet does not sanitize path names from HTTP requests
-**ID:** `JAVA-S1001` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1001)
+**ID:** `JAVA-S1001` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1001)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 This servlet uses an HTTP request parameter to construct a path. While this action may mean to access only one directory in the server's file system, it does not properly neutralize sequences such as `".."` that can resolve to a location that is outside that directory.
 
@@ -47,4 +47,7 @@ This is a serious security risk since it allows users to steal others' informati
 ## Recommended
 There are multiple ways to resolve this. For example, efforts could be made to:
 
-* Sanitize url parameters to ensure they do not contain malicious inputs* Assign directory permissions of users in such a way that this type of attack cannot occur* Check the user id when reading data related to that id
+* Sanitize url parameters to ensure they do not contain malicious inputs
+* Assign directory permissions of users in such a way that this type of attack cannot occur
+* Check the user id when reading data related to that id
+

@@ -1,7 +1,7 @@
 # Invalid regex syntax must not be used
-**ID:** `JAVA-E0394` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0394)
+**ID:** `JAVA-E0394` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0394)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Invalid regex strings will throw a `PatternSyntaxException` at runtime.
 

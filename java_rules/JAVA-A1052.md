@@ -1,7 +1,7 @@
 # Audit: `DocumentBuilder` may be vulnerable to XXE attacks
-**ID:** `JAVA-A1052` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1052)
+**ID:** `JAVA-A1052` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1052)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 This code appears to use a `DocumentBuilder` instance without setting the correct input processing flags. This could allow [XML External Entity (XXE)](https://en.wikipedia.org/wiki/XML_external_entity_attack) attacks to easily occur.
 
@@ -16,9 +16,9 @@ To put into perspective how XXE attacks can cause damage, consider the following
    <!ENTITY xxe SYSTEM "file:///etc/passwd" > ]>
 <foo>&xxe;</foo>
 ```
-The example above uses XML's DTD syntax to define an XML entity whose data is present outside the file itself (it is therefore an Xml eXternal Entity). That entity (`&xxe` here) is then used as the value of an XML element, `<foo>`.
+The example above uses XML's DTD syntax to define an XML entity whose data is present outside the file itself (it is therefore an Xml eXternal Entity). That entity ( `&xxe` here) is then used as the value of an XML element, `<foo>` .
 
-It so happens that the value of the external entity is specified to be the `/etc/passwd` file of the local machine, which is in general private information which must not be shared, leave alone accessed by the server process in any way. If an attacker could upload a malicious XML file with this particular declaration in it, the resulting XML file when parsed will also evaluate the external entity, and by extension, load the contents of `/etc/passwd`.
+It so happens that the value of the external entity is specified to be the `/etc/passwd` file of the local machine, which is in general private information which must not be shared, leave alone accessed by the server process in any way. If an attacker could upload a malicious XML file with this particular declaration in it, the resulting XML file when parsed will also evaluate the external entity, and by extension, load the contents of `/etc/passwd` .
 
 If the resultant data can be downloaded by the attacker again by some means, we would have described a successful data exfilteration attack.
 
@@ -55,8 +55,8 @@ DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilde
 ## Recommended
 Here are two ways XXE attacks can be avoided.
 
-* Using the[**`XMLConstants.FEATURE\_SECURE\_PROCESSING`
-**](https://docs.oracle.com/javase/8/docs/api/javax/xml/XMLConstants.html#FEATURE_SECURE_PROCESSING)flag
+* Using the [** `XMLConstants.FEATURE\_SECURE\_PROCESSING` **](https://docs.oracle.com/javase/8/docs/api/javax/xml/XMLConstants.html#FEATURE_SECURE_PROCESSING) flag
+
 Enabling this flag will not disallow DTD processing, but will prevent DoS attacks by limiting recursion, and will prevent access to external resources.
 
 
@@ -66,6 +66,7 @@ DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
   DocumentBuilder db = dbf.newDocumentBuilder();
 ```
 * Disallowing DTD processing entirely
+
 We can disable DTD processing wholesale by directly specifying the `disallow-doctype-decl` feature flag:
 
 

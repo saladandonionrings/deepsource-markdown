@@ -1,9 +1,9 @@
 # Class implements `Cloneable` but has not overridden the `clone` method
-**ID:** `JAVA-S0046` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0046)
+**ID:** `JAVA-S0046` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0046)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-This class implements `Cloneable` but does not define or use the `clone` method. This may be because This is a violation of the `Cloneable` contract, as stated in the [JavaDocs](https://docs.oracle.com/javase/7/docs/api/java/lang/Cloneable.html):
+This class implements `Cloneable` but does not define or use the `clone` method. This may be because This is a violation of the `Cloneable` contract, as stated in the [JavaDocs](https://docs.oracle.com/javase/7/docs/api/java/lang/Cloneable.html) :
 
 By convention, classes that implement this interface should override `Object.clone` (which is protected) with a public method.
 

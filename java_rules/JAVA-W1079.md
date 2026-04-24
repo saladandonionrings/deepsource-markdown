@@ -1,13 +1,13 @@
 # Injected fields should not be assigned in injection constructors
-**ID:** `JAVA-W1079` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1079)
+**ID:** `JAVA-W1079` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1079)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Avoid modifying fields that are already annotated with `@Inject` inside an `@Inject` annotated constructor.
 
 
 ## Bad Practice
-Here, `thing` is marked as injected. However, `Example`'s constructor is also marked with `@Inject`. This is redundant and could cause issues when initializing `thing` through both constructor and field injection.
+Here, `thing` is marked as injected. However, `Example` 's constructor is also marked with `@Inject` . This is redundant and could cause issues when initializing `thing` through both constructor and field injection.
 
 
 ```java

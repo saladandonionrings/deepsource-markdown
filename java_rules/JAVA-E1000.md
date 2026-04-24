@@ -1,7 +1,7 @@
 # A syntax error was found
-**ID:** `JAVA-E1000` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1000)
+**ID:** `JAVA-E1000` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1000)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 The Java analyzer found a malformed function call, incorrect syntax or some other similar error that will result in a compilation failure.
 

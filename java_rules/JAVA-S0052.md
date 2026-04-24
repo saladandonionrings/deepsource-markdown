@@ -1,7 +1,7 @@
 # Method may ignore exceptions
-**ID:** `JAVA-S0052` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0052)
+**ID:** `JAVA-S0052` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0052)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This method might ignore an exception. In general, exceptions should be handled, reported in some way, or rethrown by the method.
 

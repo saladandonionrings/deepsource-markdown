@@ -1,7 +1,7 @@
 # Audit: Web views should not have access to files
-**ID:** `JAVA-A1028` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1028)
+**ID:** `JAVA-A1028` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1028)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Avoid granting file access privileges to web views.
 

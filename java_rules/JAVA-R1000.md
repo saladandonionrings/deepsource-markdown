@@ -1,7 +1,7 @@
 # Function with cyclomatic complexity higher than threshold found
-**ID:** `JAVA-R1000` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-R1000)
+**ID:** `JAVA-R1000` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-R1000)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A function with high cyclomatic complexity can be hard to understand and maintain. Cyclomatic complexity is a software metric that measures the number of independent paths through a function. A higher cyclomatic complexity indicates that the function has more decision points and is more complex.
 
@@ -9,7 +9,10 @@ Functions with high cyclomatic complexity are more likely to have bugs and be ha
 
 To reduce the cyclomatic complexity of a function, you can:
 
-* Break the function into smaller, more manageable functions.* Refactor complex logic into separate functions or classes.* Avoid multiple return paths and deeply nested control expressions.
+* Break the function into smaller, more manageable functions.
+* Refactor complex logic into separate functions or classes.
+* Avoid multiple return paths and deeply nested control expressions.
+
 
 ## Bad practice
 The method below (from the source code of the Maven build system, non-branch lines have been abbreviated) has a complexity of 25, and should be refactored if possible.
@@ -124,7 +127,7 @@ public VersionResult resolveVersion(RepositorySystemSession session, VersionRequ
 ## Recommended
 It is best to refactor the method into multiple separate methods, so that the complexity of individual methods is reduced.
 
-Here, after extracting the parts of the code highlighted above, the complexity is reduced to `12`, and shifted into two other methods instead.
+Here, after extracting the parts of the code highlighted above, the complexity is reduced to `12` , and shifted into two other methods instead.
 
 
 ```java
@@ -224,7 +227,7 @@ private static Metadata getMetadataForVersion(RepositorySystemSession session, S
 ## Issue configuration
 Cyclomatic complexity threshold can be configured using the `cyclomatic_complexity_threshold` [meta field](https://docs.deepsource.com/docs/analyzers-java#cyclomatic_complexity_threshold) in your repository's `.deepsource.toml` config file.
 
-Configuring this is optional. If you don't provide a value, the Analyzer will raise issues for functions with complexity higher than the default threshold, which is "medium" (which raises issues for complexity > `15`) for the Java Analyzer.
+Configuring this is optional. If you don't provide a value, the Analyzer will raise issues for functions with complexity higher than the default threshold, which is "medium" (which raises issues for complexity > `15` ) for the Java Analyzer.
 
 Here's a mapping of risk category to cyclomatic complexity score to help you configure this better:
 

@@ -1,7 +1,7 @@
 # Static methods should be accessed using the class instance
-**ID:** `JAVA-W1029` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1029)
+**ID:** `JAVA-W1029` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1029)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 While it is possible to access static members of a class through an instance of that class, it is a bad practice to do so.
 

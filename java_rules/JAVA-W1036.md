@@ -1,9 +1,9 @@
 # Object should not be passed where a generic type is expected
-**ID:** `JAVA-W1036` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1036)
+**ID:** `JAVA-W1036` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1036)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-This code appears to pass a value of type `java.lang.Object` where a generic typed argument would have been expected. This will cause errors such as `ClassCastException`s if the value passed is not of the correct type at runtime.
+This code appears to pass a value of type `java.lang.Object` where a generic typed argument would have been expected. This will cause errors such as `ClassCastException` s if the value passed is not of the correct type at runtime.
 
 Avoid passing `Object` values to methods that expect generic types unless there is a very specific use case.
 

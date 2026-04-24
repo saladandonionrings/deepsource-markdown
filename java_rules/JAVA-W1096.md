@@ -1,11 +1,11 @@
 # Avoid assertions within `Runnable`s
-**ID:** `JAVA-W1096` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1096)
+**ID:** `JAVA-W1096` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1096)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A `Runnable` is generally used to execute code on multiple threads.
 
-If an assertion (like `assertEquals()`) were to execute and fail within a separate thread, there would be no way for the test framework to recognize the failed assertion due to how testing works in Java.
+If an assertion (like `assertEquals()` ) were to execute and fail within a separate thread, there would be no way for the test framework to recognize the failed assertion due to how testing works in Java.
 
 If you are using a test framework that can properly handle assertions across threads, you can ignore this issue with a `// skipcq: JAVA-W1096` comment on the same line as the reported assertion.
 

@@ -1,7 +1,7 @@
 # Basic authorization is a security risk
-**ID:** `JAVA-S1019` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1019)
+**ID:** `JAVA-S1019` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1019)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Security](https://img.shields.io/badge/type-security-red)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Security](https://img.shields.io/badge/type-security-red)
 
 Basic authorization only encodes the user name and password in base-64 before sending it to the server, which is just a step above sending the data as plain-text.
 

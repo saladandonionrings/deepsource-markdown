@@ -1,7 +1,7 @@
 # Catch blocks should be reachable
-**ID:** `JAVA-W1092` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1092)
+**ID:** `JAVA-W1092` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1092)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 The Java analyzer has detected an unreachable catch block that is hidden by a preceding catch block.
 

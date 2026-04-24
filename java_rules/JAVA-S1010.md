@@ -1,7 +1,7 @@
 # NullCipher must not be used outside of tests
-**ID:** `JAVA-S1010` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1010)
+**ID:** `JAVA-S1010` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1010)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 `javax.crypto.NullCipher` is a cipher class intended for testing purposes. Using it outside of tests may leak important data in production.
 

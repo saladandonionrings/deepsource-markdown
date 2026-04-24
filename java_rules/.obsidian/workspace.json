@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "a7b7f45f591f3d31",
+    "type": "split",
+    "children": [
+      {
+        "id": "893ee68fb9657e0a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fece572044456a6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JAVA-A1022.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JAVA-A1022"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "00871dc3e06fe719",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf7f5bbce84de67a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef4f24fdef82e2a3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "eab7d837374f7a65",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          },
+          {
+            "id": "e8d6db5790902aee",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Signets"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dbebb9225222592b",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0c1a583186e9c18",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0465c9cafa22697d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "JAVA-A1022.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour JAVA-A1022"
+            }
+          },
+          {
+            "id": "b3076edce8949dcf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "JAVA-A1022.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de JAVA-A1022"
+            }
+          },
+          {
+            "id": "446cfe5f719db2ae",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "07563308e9320c2b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Toutes les propriétés"
+            }
+          },
+          {
+            "id": "cd070872f9b26fd7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "JAVA-A1022.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan de JAVA-A1022"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "bases:Créer une nouvelle base": false
+    }
+  },
+  "active": "fece572044456a6a",
+  "lastOpenFiles": [
+    "JAVA-C1002.md",
+    "JAVA-C1001.md",
+    "JAVA-C1000.md",
+    "JAVA-A1068.md",
+    "JAVA-A1067.md",
+    "JAVA-A1060.md",
+    "JAVA-A1059.md",
+    "JAVA-A1058.md",
+    "JAVA-A1057.md",
+    "JAVA-A1056.md",
+    "JAVA-A1054.md",
+    "JAVA-A1052.md",
+    "JAVA-A1042.md",
+    "JAVA-A1041.md",
+    "JAVA-A1040.md",
+    "JAVA-A1039.md",
+    "JAVA-A1038.md",
+    "JAVA-A1035.md"
+  ]
+}

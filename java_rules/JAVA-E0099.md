@@ -1,9 +1,9 @@
 # `equals` method inherits parent class implementation instead of overriding `Object.equals`
-**ID:** `JAVA-E0099` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0099)
+**ID:** `JAVA-E0099` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0099)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-This class defines an `equals` method that doesn't override `Object.equals(Object)`. In addition, it inherits an overridden `equals(Object)` method from a superclass. This may lead to unexpected results when comparing instances of this class.
+This class defines an `equals` method that doesn't override `Object.equals(Object)` . In addition, it inherits an overridden `equals(Object)` method from a superclass. This may lead to unexpected results when comparing instances of this class.
 
 
 ## Bad Practice
@@ -28,7 +28,7 @@ public boolean equals(Child other) {
 
 }
 ```
-Here, `Child` inherits an overridden definition of `equals` from `Parent` and also defines an overloaded version of `equals` taking a `Child` as an argument. Any standard library collection of `Child` will use `Parent`'s definition of `equals` instead of the intended overloaded version in `Child`, ignoring the `name` field completely.
+Here, `Child` inherits an overridden definition of `equals` from `Parent` and also defines an overloaded version of `equals` taking a `Child` as an argument. Any standard library collection of `Child` will use `Parent` 's definition of `equals` instead of the intended overloaded version in `Child` , ignoring the `name` field completely.
 
 
 ## Recommended

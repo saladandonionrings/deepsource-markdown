@@ -1,7 +1,7 @@
 # `Thread.sleep()` should not be called while a lock is held
-**ID:** `JAVA-E0410` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0410)
+**ID:** `JAVA-E0410` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0410)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This method calls `Thread.sleep()` with a lock held. This may result in very poor performance and scalability, or a deadlock, since other threads may be waiting to acquire the lock.
 
@@ -46,7 +46,7 @@ synchronized(something) {
     // ...
 }
 ```
-If you are using locks or semaphores provided by the `java.util.concurrent` package, use the `await()` (for `Condition`s) or `acquire()` (for `Semaphore`s) methods instead.
+If you are using locks or semaphores provided by the `java.util.concurrent` package, use the `await()` (for `Condition` s) or `acquire()` (for `Semaphore` s) methods instead.
 
 
 ```java

@@ -1,9 +1,9 @@
 # NullPointerException should not be caught
-**ID:** `JAVA-E1070` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1070)
+**ID:** `JAVA-E1070` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1070)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-This code appears to catch a `NullPointerException`. This may hide bad errors in code.
+This code appears to catch a `NullPointerException` . This may hide bad errors in code.
 
 Consider removing the offending clause and debugging the underlying cause of the exception instead.
 

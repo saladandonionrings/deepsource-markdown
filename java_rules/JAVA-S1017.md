@@ -1,7 +1,7 @@
 # Spring sessions must not be retained across user logins
-**ID:** `JAVA-S1017` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1017)
+**ID:** `JAVA-S1017` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1017)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Spring can store the session of an authenticated user and preserve the session's state over time and even over different devices. This is called session fixation, and could allow an attacker to obtain information regarding a user's session. Such breaches of security could lead to more severe vulnerabilities later.
 

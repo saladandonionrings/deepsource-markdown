@@ -1,7 +1,7 @@
 # Stream does not appear to be closed after use
-**ID:** `JAVA-S0268` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0268)
+**ID:** `JAVA-S0268` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0268)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 The method creates an IO stream object, does not assign it to any fields, pass it to other methods that might close it, or return it, and does not appear to close the stream on all paths out of the method.
 

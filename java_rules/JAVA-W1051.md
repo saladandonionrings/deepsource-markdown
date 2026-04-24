@@ -1,7 +1,7 @@
 # Boxing a value is redundant if it is immediately unboxed
-**ID:** `JAVA-W1051` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1051)
+**ID:** `JAVA-W1051` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1051)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Performance](https://img.shields.io/badge/type-performance-white)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Performance](https://img.shields.io/badge/type-performance-white)
 
 A primitive is boxed, and then immediately unboxed. This probably is due to a manual boxing in a place where an unboxed value is required, thus forcing the compiler to immediately undo the work of the boxing.
 
@@ -9,7 +9,10 @@ Needless boxing and unboxing increases the number of dead objects that need to b
 
 Boxing can occur in the following cases:
 
-* Casting a primitive to a boxed type* Calling a boxed type's constructor with a primitive value (this is deprecated)* Calling a boxed type's`valueOf`method with a primitive value
+* Casting a primitive to a boxed type
+* Calling a boxed type's constructor with a primitive value (this is deprecated)
+* Calling a boxed type's `valueOf` method with a primitive value
+
 
 ## Bad Practice
 
@@ -36,7 +39,7 @@ invokestatic  #7                  // call static method `Integer.valueOf()` with
 invokevirtual #13                 // call instance method `Integer.intValue()`
 invokestatic  #17                 // call instance method `checkValue()` with `a`
 ```
-Note that even though the code shows only a cast, `javac` outputs two calls, one to `Integer.valueOf()` to convert `a` into an `Integer`, then `Integer.intValue()` to convert it back into a primitive `int`.
+Note that even though the code shows only a cast, `javac` outputs two calls, one to `Integer.valueOf()` to convert `a` into an `Integer` , then `Integer.intValue()` to convert it back into a primitive `int` .
 
 
 ## Recommended

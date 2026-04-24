@@ -1,7 +1,7 @@
 # Loops must terminate by some means
-**ID:** `JAVA-S0024` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0024)
+**ID:** `JAVA-S0024` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0024)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This loop doesn't seem to have a way to terminate (other than by perhaps throwing an exception).
 

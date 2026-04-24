@@ -1,9 +1,9 @@
 # Classes should not have the same name as any of their superclasses or implemented interfaces
-**ID:** `JAVA-E0169` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0169)
+**ID:** `JAVA-E0169` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0169)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
-This class/interface has a name that is identical to that of an implemented/extended class or interface, except that the supertype is in a different package (e.g., `alpha.Foo` extends `beta.Foo`).
+This class/interface has a name that is identical to that of an implemented/extended class or interface, except that the supertype is in a different package (e.g., `alpha.Foo` extends `beta.Foo` ).
 
 Consider the following 3 classes:
 

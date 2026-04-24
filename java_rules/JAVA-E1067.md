@@ -1,7 +1,7 @@
 # Nullable parameters should be checked for null before use
-**ID:** `JAVA-E1067` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1067)
+**ID:** `JAVA-E1067` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1067)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This parameter is always used as if it is non-null, but the parameter may be null when the usage occurs.
 

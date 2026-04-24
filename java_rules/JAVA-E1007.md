@@ -1,9 +1,9 @@
 # Jump statements must not be used within `finally` blocks
-**ID:** `JAVA-E1007` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1007)
+**ID:** `JAVA-E1007` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1007)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-If jump statements such as `break`, `continue`, `return` or `throw` are used within a `finally` block, any exception thrown in the `try` or `catch` blocks encountered before will be ignored, and information regarding the underlying error which caused the exception will be lost.
+If jump statements such as `break` , `continue` , `return` or `throw` are used within a `finally` block, any exception thrown in the `try` or `catch` blocks encountered before will be ignored, and information regarding the underlying error which caused the exception will be lost.
 
 Avoid using such statements to jump outside a `finally` block.
 

@@ -1,7 +1,7 @@
 # Unsafe usage of `getResource`
-**ID:** `JAVA-E0029` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0029)
+**ID:** `JAVA-E0029` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0029)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Usage of `getResource` may be unsafe if this class is extended.
 
@@ -34,7 +34,7 @@ Project
 \- Project-subproject2
    +- src/main/java      - com.example.project.subproject2.Class2
 ```
-Within `Class1.java`:
+Within `Class1.java` :
 
 
 ```java
@@ -44,7 +44,7 @@ getClass().getResource("a.png");
 
 // ...
 ```
-If `Class2` inherits from `Class1`, the `getClass` call would return `Class2.class`, not `Class1.class`. `Project-subproject1` defines a resource `a.png` within its resource directory, which is accessible with a relative path from `Class1.getClass().getResource(...)`. If the same code runs in `Class2`'s context, an `IOException` may occur because the resource is not declared relative to `Class2`. Unless the resources are referred to with absolute paths like `/com/example/subproject1/a.png`, each class can only access the resource declared under its own respective package.
+If `Class2` inherits from `Class1` , the `getClass` call would return `Class2.class` , not `Class1.class` . `Project-subproject1` defines a resource `a.png` within its resource directory, which is accessible with a relative path from `Class1.getClass().getResource(...)` . If the same code runs in `Class2` 's context, an `IOException` may occur because the resource is not declared relative to `Class2` . Unless the resources are referred to with absolute paths like `/com/example/subproject1/a.png` , each class can only access the resource declared under its own respective package.
 
 Such code is likely to break in production (if it hasn't already broken in testing).
 

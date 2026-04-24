@@ -1,9 +1,9 @@
 # `equals` always returns `false`
-**ID:** `JAVA-W0107` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0107)
+**ID:** `JAVA-W0107` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0107)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
-This class defines an `equals` method that always returns false. This means that an object is not equal to itself, and it is impossible to create useful `Map`s or `Set`s of this class.
+This class defines an `equals` method that always returns false. This means that an object is not equal to itself, and it is impossible to create useful `Map` s or `Set` s of this class.
 
 More fundamentally, it means that `equals` is not reflexive, one of the requirements of its API.
 

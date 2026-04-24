@@ -1,13 +1,13 @@
 # Optional values must be checked before being accessed
-**ID:** `JAVA-E1013` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1013)
+**ID:** `JAVA-E1013` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1013)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-Do not call `Optional.get()` without first confirming whether there is a valid value present through `Optional.isPresent()`.
+Do not call `Optional.get()` without first confirming whether there is a valid value present through `Optional.isPresent()` .
 
 `java.util.Optional` is a very useful tool for avoiding the usage of `null` in a codebase. However, even an `Optional` can be unsafe if it does not contain a value when used.
 
-If `get()` is called without calling `isPresent()`, an exception could be raised, which would mean the `Optional` is no better than a normal nullable value.
+If `get()` is called without calling `isPresent()` , an exception could be raised, which would mean the `Optional` is no better than a normal nullable value.
 
 
 ## Bad Practice

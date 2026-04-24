@@ -1,7 +1,7 @@
 # Absolute paths should not be hard coded
-**ID:** `JAVA-W0406` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0406)
+**ID:** `JAVA-W0406` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0406)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Absolute paths may lead to portability issues.
 

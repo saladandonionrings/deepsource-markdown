@@ -1,7 +1,7 @@
 # RSA keys must be at least 2048 bits long
-**ID:** `JAVA-S1014` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1014)
+**ID:** `JAVA-S1014` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1014)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 This code creates an RSA key pair with an insecure key size. This could reduce the security of the generated keys, allowing malicious actors to easily break encryption.
 

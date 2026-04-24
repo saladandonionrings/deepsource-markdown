@@ -1,7 +1,7 @@
 # Repeated conditional test on the same variable detected
-**ID:** `JAVA-S0034` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0034)
+**ID:** `JAVA-S0034` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0034)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 The code contains a conditional test that is performed twice, one right after the other.
 

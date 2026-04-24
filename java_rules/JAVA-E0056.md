@@ -1,13 +1,13 @@
 # `Thread` passed where `Runnable` expected
-**ID:** `JAVA-E0056` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0056)
+**ID:** `JAVA-E0056` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0056)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A `Thread` object is passed as a parameter to a method where a `Runnable` is expected. This is rather unusual, and may indicate a logic error or cause unexpected behavior.
 
-Because `Thread` inherits from `Runnable`, it has a public `run` method which any other code can freely call. In general, `Thread` wraps a `Runnable` instance, though it could be extended with a custom `run` method as well.
+Because `Thread` inherits from `Runnable` , it has a public `run` method which any other code can freely call. In general, `Thread` wraps a `Runnable` instance, though it could be extended with a custom `run` method as well.
 
-Calling `Thread.run` will not spawn a new thread; that is `Thread.start`'s responsibility. Such usage is not harmful in and of itself, but it is likely to raise eyebrows in code review. It may be that `Thread.run` was called in place of `Thread.start` by accident.
+Calling `Thread.run` will not spawn a new thread; that is `Thread.start` 's responsibility. Such usage is not harmful in and of itself, but it is likely to raise eyebrows in code review. It may be that `Thread.run` was called in place of `Thread.start` by accident.
 
 
 ## Bad Practice
@@ -28,7 +28,7 @@ a.run();
 ```java
 a.start();
 ```
-Or, if you intended to use `Runnable`,
+Or, if you intended to use `Runnable` ,
 
 
 ```java

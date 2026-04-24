@@ -1,7 +1,7 @@
 # Methods must not unconditionally call themselves
-**ID:** `JAVA-E1017` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1017)
+**ID:** `JAVA-E1017` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1017)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This method appears to call itself unconditionally.
 

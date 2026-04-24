@@ -1,9 +1,9 @@
 # Increment/decrement performed during assignment expression to same variable will be lost
-**ID:** `JAVA-E0396` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0396)
+**ID:** `JAVA-E0396` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0396)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-The code performs a post increment/decrement operation (e.g., `i++`) and then immediately overwrites it.
+The code performs a post increment/decrement operation (e.g., `i++` ) and then immediately overwrites it.
 
 Either change the assignment into an operator assignment or write the increment as a separate statement.
 
@@ -31,5 +31,5 @@ i++;
 
 assert(i == 2; // Also succeeds.
 ```
-The add-assign operator (`+=`) is very useful for cases where one wishes to increment a value; alternatively, just a lone increment expression could serve the same purpose.
+The add-assign operator ( `+=` ) is very useful for cases where one wishes to increment a value; alternatively, just a lone increment expression could serve the same purpose.
 

@@ -1,9 +1,9 @@
 # Calls to assertion chain methods should be terminated with an assertion
-**ID:** `JAVA-E1109` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1109)
+**ID:** `JAVA-E1109` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1109)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-Always terminate calls to `assertThat()` or `verify()` with a relevant assertion call, such as `equals()`, or similar.
+Always terminate calls to `assertThat()` or `verify()` with a relevant assertion call, such as `equals()` , or similar.
 
 Assertion frameworks such as Assert4J and Truth have fluent APIs, where assertions are represented as chained method calls.
 
@@ -17,7 +17,7 @@ This would make the assertion useless.
 
 What's worse is that such an incomplete assertion will not fail your tests, lulling you into a false sense of security.
 
-This issue is reported for any test frameworks such as Assert4J or Mockito which support fluent assertions through methods such as `assertThat` or `verify`.
+This issue is reported for any test frameworks such as Assert4J or Mockito which support fluent assertions through methods such as `assertThat` or `verify` .
 
 
 ## Bad Practice

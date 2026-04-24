@@ -1,7 +1,7 @@
 # `@Expensive`/`@WorkerThread` annotated method should not override unannotated super method
-**ID:** `JAVA-W1061` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1061)
+**ID:** `JAVA-W1061` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1061)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 An overriding method should not be marked `@Expensive` or `@WorkerThread` if its super method is not annotated as such.
 

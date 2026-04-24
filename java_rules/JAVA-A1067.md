@@ -1,7 +1,7 @@
 # @VisibleForTesting/@TestOnly annotated methods/constructors should not be used in non-test code
-**ID:** `JAVA-A1067` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1067)
+**ID:** `JAVA-A1067` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1067)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A method/constructor that is marked with annotations such as `@VisibleForTesting` or `@TestOnly` should not be called from non-test code, as such declarations are only meant to be used as test helpers.
 

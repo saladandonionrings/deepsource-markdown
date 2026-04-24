@@ -1,7 +1,7 @@
 # Getter/setter names must be appropriate
-**ID:** `JAVA-E1014` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1014)
+**ID:** `JAVA-E1014` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1014)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Getter or setter methods must not perform operations other than reading or writing fields they are named after.
 
@@ -11,7 +11,9 @@ When working with multiple fields that all need getters and/or setters, it is ea
 
 This issue is raised when:
 
-* A getter does not read the field it is named after.* A setter does not write to the field it is named after.
+* A getter does not read the field it is named after.
+* A setter does not write to the field it is named after.
+
 
 ## Bad Practice
 

@@ -1,7 +1,7 @@
 # `readResolve` should be protected for non-final classes
-**ID:** `JAVA-W1097` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1097)
+**ID:** `JAVA-W1097` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1097)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 The `readResolve` method provides additional control of how an object is deserialized.
 

@@ -1,7 +1,7 @@
 # Methods should not have different nullability than their super methods
-**ID:** `JAVA-E1100` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1100)
+**ID:** `JAVA-E1100` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1100)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 If a method of a superclass has one particular nullability annotation applied to it, avoid marking any overrides in subtypes with a different nullability annotation.
 
@@ -13,7 +13,7 @@ This issue will also be raised on parameters of such overloaded methods that may
 
 
 ## Bad Practice
-Consider this code, where class `B` extends class `A`, and overrides `A.a` with `@Nullable` instead of `@Nonnull` as `A.a` has been marked.
+Consider this code, where class `B` extends class `A` , and overrides `A.a` with `@Nullable` instead of `@Nonnull` as `A.a` has been marked.
 
 
 ```java

@@ -1,9 +1,9 @@
 # Call to unsupported method detected
-**ID:** `JAVA-E1048` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1048)
+**ID:** `JAVA-E1048` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1048)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-A method that unconditionally throws an [`UnsupportedOperationException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/UnsupportedOperationException.html) was called. Avoid calling methods that you know will always throw an exception.
+A method that unconditionally throws an [ `UnsupportedOperationException` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/UnsupportedOperationException.html) was called. Avoid calling methods that you know will always throw an exception.
 
 This issue is raised when:
 

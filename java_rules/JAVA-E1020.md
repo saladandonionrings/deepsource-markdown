@@ -1,11 +1,11 @@
 # Indices must not be out of bounds
-**ID:** `JAVA-E1020` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1020)
+**ID:** `JAVA-E1020` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1020)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-When indexing into a `String`, `List` or array, if the index is out of bounds one of the `IndexOutOfBoundsException` family will be thrown.
+When indexing into a `String` , `List` or array, if the index is out of bounds one of the `IndexOutOfBoundsException` family will be thrown.
 
-This issue will be raised if the indices used with `String`, `List` or array access expressions appear to be out of bounds with respect to the target value's declared size.
+This issue will be raised if the indices used with `String` , `List` or array access expressions appear to be out of bounds with respect to the target value's declared size.
 
 
 ## Bad Practice

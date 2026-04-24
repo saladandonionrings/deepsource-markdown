@@ -1,7 +1,7 @@
 # Mutable fields should not directly be returned
-**ID:** `JAVA-S1049` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1049)
+**ID:** `JAVA-S1049` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1049)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Security](https://img.shields.io/badge/type-security-red)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Security](https://img.shields.io/badge/type-security-red)
 
 A mutable field (which is either an array type or a class with public non-final fields) is returned directly (without being copied). This could result in the internal state of your API being exposed, or worse, open to manipulation.
 

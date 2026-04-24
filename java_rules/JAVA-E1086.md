@@ -1,15 +1,15 @@
 # Mutable data passed in to nonpublic field may be externally modifiable
-**ID:** `JAVA-E1086` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1086)
+**ID:** `JAVA-E1086` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1086)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-This code seems to assign mutable data, such as an `ArrayList`, or a native Java array (like `int[]`) to a non-public field without first copying the data. This may lead to errors caused by inconsistent state if the passed in data is later modified from caller-side code.
+This code seems to assign mutable data, such as an `ArrayList` , or a native Java array (like `int[]` ) to a non-public field without first copying the data. This may lead to errors caused by inconsistent state if the passed in data is later modified from caller-side code.
 
-When initializing an object, or invoking a setter for a field, it is common practice in Java to perform a [defensive copy](http://www.javapractices.com/topic/TopicAction.do?Id=15), where a deep copy of the input data is first made before it is used or assigned to anything else. This helps ensure that any change to the state of the object only happens by way of the object's methods, not by some external operation.
+When initializing an object, or invoking a setter for a field, it is common practice in Java to perform a [defensive copy](http://www.javapractices.com/topic/TopicAction.do?Id=15) , where a deep copy of the input data is first made before it is used or assigned to anything else. This helps ensure that any change to the state of the object only happens by way of the object's methods, not by some external operation.
 
 
 ## Bad Practice
-Consider this class declaration. It has one setter, `setIpAddrs`, which assigns the value of
+Consider this class declaration. It has one setter, `setIpAddrs` , which assigns the value of
 
 
 ```java
@@ -37,14 +37,14 @@ SomeClass instance = new SomeClass();
 
 instance.setIpAddrs(addrs); // At this point, we have assigned addrs to ipAddrs.
 ```
-If, at this point, we were to invoke `printAddrs()`, we would see this output:
+If, at this point, we were to invoke `printAddrs()` , we would see this output:
 
 
 ```java
 192.168.10.23
 10.0.0.123
 ```
-Now, consider what would happen if we change the value of one of `addrs`'s elements:
+Now, consider what would happen if we change the value of one of `addrs` 's elements:
 
 
 ```java

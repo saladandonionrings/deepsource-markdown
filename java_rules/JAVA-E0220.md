@@ -1,7 +1,7 @@
 # `readLine` result is read without a null check
-**ID:** `JAVA-E0220` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0220)
+**ID:** `JAVA-E0220` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0220)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 The result of invoking `readLine()` is read without checking to see if it is null.
 

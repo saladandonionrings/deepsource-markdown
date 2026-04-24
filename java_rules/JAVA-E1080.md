@@ -1,9 +1,9 @@
 # The `%` operator has higher precedence than the `*` operator
-**ID:** `JAVA-E1080` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1080)
+**ID:** `JAVA-E1080` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1080)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-This code seems to be multiplying the result of a modulus (`%`) operation without specifying the order of operations with parentheses. Such code may not work as expected.
+This code seems to be multiplying the result of a modulus ( `%` ) operation without specifying the order of operations with parentheses. Such code may not work as expected.
 
 
 ## Bad Practice

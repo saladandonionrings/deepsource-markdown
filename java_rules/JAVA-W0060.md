@@ -1,9 +1,9 @@
 # `System.exit()` should only be invoked within application entry points
-**ID:** `JAVA-W0060` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0060)
+**ID:** `JAVA-W0060` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0060)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-This method invokes `System.exit()`, and is called by other code. This can prevent proper error handling and debugging.
+This method invokes `System.exit()` , and is called by other code. This can prevent proper error handling and debugging.
 
 Invoking `System.exit()` shuts down the entire Java virtual machine. This should only been done when it is appropriate. Such calls make it hard or impossible for your code to be invoked by other code, since an error that causes `System.exit()` to be invoked cannot be handled by the calling code at all.
 

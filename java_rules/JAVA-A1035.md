@@ -1,7 +1,7 @@
 # Audit: Including request data within HTML response strings may lead to XSS attacks
-**ID:** `JAVA-A1035` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1035)
+**ID:** `JAVA-A1035` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1035)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Avoid directly including request data within HTML, as this may lead to a cross-site-scripting vulnerability.
 
@@ -24,7 +24,7 @@ response.setStatus(200);
 writer.print(renderedPage);
 writer.flush();
 ```
-Here, if the request parameter `user` was `"Ralph"`, the data in the response would read as:
+Here, if the request parameter `user` was `"Ralph"` , the data in the response would read as:
 
 
 ```java
@@ -42,7 +42,7 @@ If a request was sent with this data, the output in the response would look like
 ```java
 <p>Hi, <script>alert("hacked")</script>Ralph!</p>
 ```
-When the user's browser displays the result of the response, an alert would pop up that said `"hacked"`.
+When the user's browser displays the result of the response, an alert would pop up that said `"hacked"` .
 
 Obviously, this is just a simple example of what is possible. A more dangerous attack may involve malicious UI elements or popups that look similar to the real website, but are used only to gain access to account information.
 
@@ -64,7 +64,7 @@ String sanitizedText = sanitizer.sanitize(userName);
 
 String safeRenderedText = String.format(template, sanitizedText);
 ```
-Note that the location of text to be rendered matters greatly; escape sequences that are valid within a HTML attribute may not be valid in JavaScript code for example. For this reason, the ESAPI library provides a [variety of different encoders](https://javadoc.io/static/org.owasp.encoder/encoder/1.2.3/org/owasp/encoder/Encoders.html), and context specific encoding methods within the [Encode](https://javadoc.io/static/org.owasp.encoder/encoder/1.2.3/org/owasp/encoder/Encode.html) class for various use cases:
+Note that the location of text to be rendered matters greatly; escape sequences that are valid within a HTML attribute may not be valid in JavaScript code for example. For this reason, the ESAPI library provides a [variety of different encoders](https://javadoc.io/static/org.owasp.encoder/encoder/1.2.3/org/owasp/encoder/Encoders.html) , and context specific encoding methods within the [Encode](https://javadoc.io/static/org.owasp.encoder/encoder/1.2.3/org/owasp/encoder/Encode.html) class for various use cases:
 
 
 ```java

@@ -1,7 +1,7 @@
 # Collections should not contain themselves
-**ID:** `JAVA-E1076` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1076)
+**ID:** `JAVA-E1076` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1076)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Avoid checking if a collection contains itself.
 

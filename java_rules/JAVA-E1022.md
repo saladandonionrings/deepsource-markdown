@@ -1,9 +1,9 @@
 # `Optional` values must never be `null`
-**ID:** `JAVA-E1022` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1022)
+**ID:** `JAVA-E1022` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1022)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-`Optional<T>` is a type that serves to help developers avoid one of the oldest mistakes in the book: `NullPointerException`s. Due to Java's unfortunate choice of semantics however, the wonderful properties of this type are overshadowed by the fact that variables which refer to `Optional` objects themselves can still hold null values.
+`Optional<T>` is a type that serves to help developers avoid one of the oldest mistakes in the book: `NullPointerException` s. Due to Java's unfortunate choice of semantics however, the wonderful properties of this type are overshadowed by the fact that variables which refer to `Optional` objects themselves can still hold null values.
 
 Storing `null` into an `Optional` variable is not recommended and must be strictly avoided.
 
@@ -35,7 +35,7 @@ Optional<MyClass> method() {
     else return Optional.of(new MyClass());
 }
 ```
-If you wish to convert a value which may be null into an `Optional` use `Optional.ofNullable()`:
+If you wish to convert a value which may be null into an `Optional` use `Optional.ofNullable()` :
 
 
 ```java

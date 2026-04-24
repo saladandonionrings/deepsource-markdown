@@ -1,7 +1,7 @@
 # Inefficient use of keySet iterator instead of entrySet iterator
-**ID:** `JAVA-P0361` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P0361)
+**ID:** `JAVA-P0361` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P0361)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Performance](https://img.shields.io/badge/type-performance-white)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Performance](https://img.shields.io/badge/type-performance-white)
 
 This method accesses the value of a Map entry, using a key that was retrieved from a `keySet` iterator.
 

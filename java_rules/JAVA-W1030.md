@@ -1,7 +1,7 @@
 # Static fields of the parent class should not be accessed through child class instances
-**ID:** `JAVA-W1030` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1030)
+**ID:** `JAVA-W1030` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1030)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Non-private static members of the parent class are accessible by child classes. However, it is a bad practice to do so, because it obscures where a value was actually declared. Always use only the declaring class to access static members.
 

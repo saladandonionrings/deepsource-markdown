@@ -1,7 +1,7 @@
 # Useless control flow detected
-**ID:** `JAVA-W1047` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1047)
+**ID:** `JAVA-W1047` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1047)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This method contains a useless control flow statement, where control flow continues onto the same place regardless of whether the branch is taken or not. For example, this is caused by having an empty statement block for an `if` statement, or having a conditional that always fails or succeeds:
 

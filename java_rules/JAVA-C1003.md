@@ -1,7 +1,7 @@
 # Multiple variables declared on the same line
-**ID:** `JAVA-C1003` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-C1003)
+**ID:** `JAVA-C1003` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-C1003)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Style](https://img.shields.io/badge/type-style-blue)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Style](https://img.shields.io/badge/type-style-blue)
 
 Multiple variables (or fields) should not be declared on the same line.
 

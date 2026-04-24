@@ -1,7 +1,7 @@
 # Undocumented class found
-**ID:** `JAVA-D1000` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-D1000)
+**ID:** `JAVA-D1000` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-D1000)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Documentation](https://img.shields.io/badge/type-documentation-lightgrey)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Documentation](https://img.shields.io/badge/type-documentation-lightgrey)
 
 This class does not have any documentation.
 
@@ -13,7 +13,7 @@ While it may seem like the functionality of a class is perfectly obvious, any co
 ## Bad Practice
 Consider a case where the class given below can be instantiated and provides certain functionalities within each instance in a thread-safe manner, perhaps it is a rest API client.
 
-If there is no documentation comment on the class, it is not immediately obvious that the class is thread safe. Thus, multiple instances of the class may be created to perform operations concurrently, using up both memory as well as OS resources like sockets. If it were known from the beginning that the class were thread safe, the user would not need to create unnecessary extra instances of `SomeClass`.
+If there is no documentation comment on the class, it is not immediately obvious that the class is thread safe. Thus, multiple instances of the class may be created to perform operations concurrently, using up both memory as well as OS resources like sockets. If it were known from the beginning that the class were thread safe, the user would not need to create unnecessary extra instances of `SomeClass` .
 
 
 ```java

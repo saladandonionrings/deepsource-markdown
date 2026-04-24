@@ -1,11 +1,11 @@
 # Do not synchronize on the result of `getClass()`
-**ID:** `JAVA-E1021` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1021)
+**ID:** `JAVA-E1021` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1021)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 `Object.getClass()` returns the runtime type of a variable.
 
-Because of this, it is not guaranteed that the same object will be returned for all values contained in a variable of a certain type, unless that type is declared as `final`.
+Because of this, it is not guaranteed that the same object will be returned for all values contained in a variable of a certain type, unless that type is declared as `final` .
 
 Attempting to synchronize on the result of `getClass()` called on a variable with a non-final type could lead to concurrency bugs such as race conditions.
 
@@ -37,7 +37,7 @@ synchronized (secondExample.getClass()) {
     // ...
 }
 ```
-While the declared type of `secondExample` is `MyClass`, its actual type at runtime is `MySubClass`. This means that we will not be synchronizing on the same object in the first and second `synchronized` blocks.
+While the declared type of `secondExample` is `MyClass` , its actual type at runtime is `MySubClass` . This means that we will not be synchronizing on the same object in the first and second `synchronized` blocks.
 
 
 ## Recommended

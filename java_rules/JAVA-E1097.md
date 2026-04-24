@@ -1,7 +1,7 @@
 # Avoid throwing `null`
-**ID:** `JAVA-E1097` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1097)
+**ID:** `JAVA-E1097` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1097)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Throwing `null` is a bad practice and should be avoided, as it serves no meaningful purpose.
 
@@ -15,7 +15,7 @@ throw null;
 ```
 
 ## Recommended
-If you need to throw a `NullPointerException`, do so directly.
+If you need to throw a `NullPointerException` , do so directly.
 
 
 ```java

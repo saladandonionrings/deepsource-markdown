@@ -1,7 +1,7 @@
 # Missing enum elements in switch cases
-**ID:** `JAVA-E1082` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1082)
+**ID:** `JAVA-E1082` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1082)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Switch statements that have expression of an enum type and don't have the default label must specify all the enum elements in their cases.
 

@@ -1,7 +1,7 @@
 # Case conversion may not work as expected for international characters without specifying the encoding
-**ID:** `JAVA-S0069` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0069)
+**ID:** `JAVA-S0069` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0069)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 A String is being converted to upper or lowercase, using the platform's default encoding. This may result in improper conversions when used with international characters.
 

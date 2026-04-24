@@ -1,7 +1,7 @@
 # Malformed JavaDoc comment
-**ID:** `JAVA-D1007` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-D1007)
+**ID:** `JAVA-D1007` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-D1007)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Documentation](https://img.shields.io/badge/type-documentation-lightgrey)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Documentation](https://img.shields.io/badge/type-documentation-lightgrey)
 
 This JavaDoc comment appears to be malformed. Such comments may raise errors or cause crashes when passed to a JavaDoc generation tool.
 

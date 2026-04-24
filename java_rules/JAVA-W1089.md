@@ -1,7 +1,7 @@
 # For loop can be converted into a foreach loop
-**ID:** `JAVA-W1089` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1089)
+**ID:** `JAVA-W1089` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1089)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 If a for loop can be converted to a foreach loop, consider doing so, as it is a more concise and readable syntax.
 

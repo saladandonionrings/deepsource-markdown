@@ -1,7 +1,7 @@
 # Self assignment of local variable detected
-**ID:** `JAVA-E0291` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0291)
+**ID:** `JAVA-E0291` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0291)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 A local variable is assigned to itself.
 

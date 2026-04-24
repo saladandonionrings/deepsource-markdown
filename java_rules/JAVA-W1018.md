@@ -1,7 +1,7 @@
 # Type bound extends final type
-**ID:** `JAVA-W1018` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1018)
+**ID:** `JAVA-W1018` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1018)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This type parameter appears to extend a final class, which is a useless operation. Just specify the class directly.
 
@@ -9,7 +9,7 @@ The only class which inherits from a final class is that class itself. Thus, jus
 
 
 ## Bad Practice
-The method below accepts an argument with a generic type `T` that extends `java.lang.String`. However, `String` is a final class and cannot be extended further. This means that the only class that can be accepted by this method is `String` itself.
+The method below accepts an argument with a generic type `T` that extends `java.lang.String` . However, `String` is a final class and cannot be extended further. This means that the only class that can be accepted by this method is `String` itself.
 
 
 ```java

@@ -1,7 +1,7 @@
 # Avoid using `equals` to compare against `null`
-**ID:** `JAVA-E0051` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0051)
+**ID:** `JAVA-E0051` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0051)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Tests for null should not use the `equals` method. The '==' operator should be used instead.
 
@@ -19,7 +19,7 @@ if (x.equals(null)) {
     doSomething();
 }
 ```
-If `x` is null in the above snippet, calling `equals` on it would result in a `NullPointerException`.
+If `x` is null in the above snippet, calling `equals` on it would result in a `NullPointerException` .
 
 
 ## Recommended

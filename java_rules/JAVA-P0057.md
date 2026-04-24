@@ -1,9 +1,9 @@
 # Maps and Sets of URLs can be performance hogs
-**ID:** `JAVA-P0057` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P0057)
+**ID:** `JAVA-P0057` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P0057)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Performance](https://img.shields.io/badge/type-performance-white)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Performance](https://img.shields.io/badge/type-performance-white)
 
-This method or field is or uses a `Map` or `Set` of `URL`s. Since both the `equals` and `hashCode` method of `URL` perform domain name resolution, this can result in a big performance hit.
+This method or field is or uses a `Map` or `Set` of `URL` s. Since both the `equals` and `hashCode` method of `URL` perform domain name resolution, this can result in a big performance hit.
 
 
 ## Bad Practice

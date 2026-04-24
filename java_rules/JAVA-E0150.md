@@ -1,9 +1,9 @@
 # Boxed primitives should not be synchronized on
-**ID:** `JAVA-E0150` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0150)
+**ID:** `JAVA-E0150` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0150)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-The code synchronizes on a boxed primitive constant, such as an `Integer`.
+The code synchronizes on a boxed primitive constant, such as an `Integer` .
 
 
 ## Bad Practice

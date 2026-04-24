@@ -1,7 +1,7 @@
 # Overwriting a method parameter will not modify the original object
-**ID:** `JAVA-E0352` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0352)
+**ID:** `JAVA-E0352` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0352)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This method ignores the original value of a parameter and attempts to assign a new value to it.
 
@@ -9,7 +9,7 @@ This often indicates a mistaken belief that the write to the parameter will be c
 
 However, note that it is still possible to modify a value passed to a method if the value has mutable public fields or if the value exposes methods to modify its fields.
 
-It may be helpful to keep in mind that Java's method parameters are passed by **value**, not reference. Primitive values are copied into the method arguments, and object references (not objects) are similarly copied. Method arguments merely increase the reference count for any objects.
+It may be helpful to keep in mind that Java's method parameters are passed by **value** , not reference. Primitive values are copied into the method arguments, and object references (not objects) are similarly copied. Method arguments merely increase the reference count for any objects.
 
 Do not assign a new value to a parameter reference; it will not affect the original value.
 

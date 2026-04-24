@@ -1,11 +1,11 @@
 # LDAP object deserialization is a security risk
-**ID:** `JAVA-S1026` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1026)
+**ID:** `JAVA-S1026` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1026)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) (Lightweight Directory Access Protocol) search queries should not allow objects found to be deserialized.
 
-This issue is raised when an LDAP [`SearchControls`](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/SearchControls.html) object is configured to allow deserialization of objects retrieved via a search query.
+This issue is raised when an LDAP [ `SearchControls` ](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/SearchControls.html) object is configured to allow deserialization of objects retrieved via a search query.
 
 [JNDI](https://www.oracle.com/java/technologies/jndi-overview.html) is a protocol that allows Java classes from remote locations to be downloaded and added into an application's classpath at runtime.
 
@@ -29,11 +29,11 @@ SearchControls ctls = new SearchControls(
 
 ctls.setReturningObjFlag(true); // This does the same thing.
 ```
-The returning object flag, as it is called, is set by default to `false`. Usually, when values are to be retrieved using an LDAP search, only their names and attributes are retrieved. However, if this flag is set to `true` and a Java serialized object was stored in the entry, Java will also try to deserialize and return an object version of it.
+The returning object flag, as it is called, is set by default to `false` . Usually, when values are to be retrieved using an LDAP search, only their names and attributes are retrieved. However, if this flag is set to `true` and a Java serialized object was stored in the entry, Java will also try to deserialize and return an object version of it.
 
 
 ## Recommended
-Set the returning object flag to `false` when performing LDAP search queries, either with the `SearchControls` constructor or by calling [`setReturningObjFlag()`](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/SearchControls.html#setReturningObjFlag(boolean)) with `false`.
+Set the returning object flag to `false` when performing LDAP search queries, either with the `SearchControls` constructor or by calling [ `setReturningObjFlag()` ](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/SearchControls.html#setReturningObjFlag(boolean)) with `false` .
 
 
 ```java

@@ -1,7 +1,7 @@
 # Imprecise redefinition of library constant
-**ID:** `JAVA-W1033` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1033)
+**ID:** `JAVA-W1033` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1033)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A library constant has been redefined in source code with a different/imprecise value.
 

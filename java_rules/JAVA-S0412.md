@@ -1,7 +1,7 @@
 # Method uses the same code for two switch clauses
-**ID:** `JAVA-S0412` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0412)
+**ID:** `JAVA-S0412` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0412)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Method uses the same code for two switch clauses
 

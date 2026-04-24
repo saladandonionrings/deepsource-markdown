@@ -1,7 +1,7 @@
 # Arguments of binary expressions must not be duplicated
-**ID:** `JAVA-E0034` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0034)
+**ID:** `JAVA-E0034` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0034)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 The code contains an expression that appears twice, one right after the other.
 
@@ -30,5 +30,5 @@ Double check if this was intended; it likely wasn't.
 
 
 ## Exceptions
-This issue will not be raised when the operator is `*`, as usually that would indicate an exponentiation operation.
+This issue will not be raised when the operator is `*` , as usually that would indicate an exponentiation operation.
 

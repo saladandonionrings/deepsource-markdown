@@ -1,7 +1,7 @@
 # Audit: Double checked locking is not safe
-**ID:** `JAVA-E1018` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1018)
+**ID:** `JAVA-E1018` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1018)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This method may contain an instance of double-checked locking of a non-volatile field. This will not work because the [unpredictability of Java's object allocation mechanics](https://stackoverflow.com/a/4926812/6325886) may result in race conditions with other threads.
 
@@ -35,18 +35,20 @@ The root cause of the problem is how the assignment of a new value to `internalI
 
 If a different thread were to call `getInstance()` after `internalInstance` is assigned but before the object it is assigned is properly constructed, one possible sequence of events may occur:
 
-Thread `A`:
+Thread `A` :
 
-* Within synchronized block:`internalInstance`is non-null. The object referenced by`internalInstance`however is not fully constructed.* We do not exit the synchronized block within thread`A`.
-Thread `B`:
+* Within synchronized block: `internalInstance` is non-null. The object referenced by `internalInstance` however is not fully constructed.
+* We do not exit the synchronized block within thread `A` .
 
-If thread `B` preempts `A` before `A` has a chance to fully initialize `internalInstance`, a data race would effectively occur with the result being that any further operations done on `internalInstance` in thread `B` will likely throw an exception.
+Thread `B` :
+
+If thread `B` preempts `A` before `A` has a chance to fully initialize `internalInstance` , a data race would effectively occur with the result being that any further operations done on `internalInstance` in thread `B` will likely throw an exception.
 
 
 ## Recommended
 It is not enough to declare `internalInstance` as being static. It is possible and probable, that changes to `internalInstance` within one thread may not be reflected in others. There are a number of ways to remedy this.
 
-**Make the getter method `synchronized`**
+**Make the getter method `synchronized` **
 
 
 ```java
@@ -116,7 +118,7 @@ public class InnerStaticResourceHolder {
     }
 }
 ```
-The static inner `ResourceHolder` class ensures that the `internalInstance` variable will only be initialized once, at the time of its first access. This works because of how static fields of static inner classes are initialized, and is known as the [initialization-on-demand holder pattern](https://en.wikipedia.org/wiki/Initialization-on-demand_holder_idiom). However, this method cannot be used to create instance-specific resources, only static ones. That is, we cannot have a version of `InnerStaticResourceHolder` which will allow multiple instances to have their own unique lazy initialized versions of `internalInstance`.
+The static inner `ResourceHolder` class ensures that the `internalInstance` variable will only be initialized once, at the time of its first access. This works because of how static fields of static inner classes are initialized, and is known as the [initialization-on-demand holder pattern](https://en.wikipedia.org/wiki/Initialization-on-demand_holder_idiom) . However, this method cannot be used to create instance-specific resources, only static ones. That is, we cannot have a version of `InnerStaticResourceHolder` which will allow multiple instances to have their own unique lazy initialized versions of `internalInstance` .
 
-It is also inadvisable to use this pattern when lazy initialization of the variable could fail. If the initialization of the static variable fails, the first call to `getResource()` would result in an `ExceptionInInitializerError` and subsequent calls would result in `NoClassDefFoundError`s.
+It is also inadvisable to use this pattern when lazy initialization of the variable could fail. If the initialization of the static variable fails, the first call to `getResource()` would result in an `ExceptionInInitializerError` and subsequent calls would result in `NoClassDefFoundError` s.
 

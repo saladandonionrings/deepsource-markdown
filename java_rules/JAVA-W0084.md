@@ -1,7 +1,7 @@
 # `Thread` with empty `run` method is useless
-**ID:** `JAVA-W0084` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0084)
+**ID:** `JAVA-W0084` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0084)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A thread was created using the default empty run method.
 

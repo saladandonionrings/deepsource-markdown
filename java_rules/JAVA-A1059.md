@@ -1,7 +1,7 @@
 # SSLContext instances should not be constructed using "SSL"
-**ID:** `JAVA-A1059` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1059)
+**ID:** `JAVA-A1059` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1059)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 SSLContext should be initialized with `"TLS"` in order to use more recent TLS versions. If `SSL` is used instead as the protocol string, the implementation will default to an older, insecure version of TLS or SSL.
 

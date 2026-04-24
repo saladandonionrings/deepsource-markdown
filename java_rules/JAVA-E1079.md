@@ -1,7 +1,7 @@
 # Array elements should match the runtime type of the array
-**ID:** `JAVA-E1079` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1079)
+**ID:** `JAVA-E1079` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1079)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This array element assignment seems to have a different type than what the array was initialized with. Performing this operation will trigger an [ArrayStoreException](https://docs.oracle.com/javase/8/docs/api/java/lang/ArrayStoreException.html) at runtime.
 

@@ -1,7 +1,7 @@
 # Getter and setter method synchronization does not match
-**ID:** `JAVA-E1074` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1074)
+**ID:** `JAVA-E1074` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1074)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This class contains get and set methods where one is synchronized but the other is not. Such code may allow race conditions to occur while reading or writing the associated field.
 
@@ -26,7 +26,7 @@ public void setName(String newName) {
     this.name = newName;
 }
 ```
-Here, `values` has a synchronized method getter (the getter synchronizes on `this`) and a setter with a synchronized block (the setter synchronizes on `this.LOCK`).
+Here, `values` has a synchronized method getter (the getter synchronizes on `this` ) and a setter with a synchronized block (the setter synchronizes on `this.LOCK` ).
 
 
 ```java
@@ -44,7 +44,7 @@ public void setValues(Map<Integer, Integer> newValues) {
     }
 }
 ```
-Here, `items` has an unsynchornized getter, and its setter synchronizes on `LOCK`.
+Here, `items` has an unsynchornized getter, and its setter synchronizes on `LOCK` .
 
 
 ```java

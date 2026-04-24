@@ -1,7 +1,7 @@
 # The default case should be last within a switch block
-**ID:** `JAVA-W1010` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1010)
+**ID:** `JAVA-W1010` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1010)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 `switch` blocks in Java do not impose a specific order for their clauses. This means that even if, say, the `default` clause were to appear as the first case in a switch block, Java will first ensure that no other switch case matches the input before executing it.
 
@@ -21,7 +21,7 @@ switch (someVar) {
 ```
 
 ## Recommended
-Putting the `default` clause of a switch block at the end has been a long-standing tradition in `C`-like languages, and it is a tradition worth respecting for the clarity it provides.
+Putting the `default` clause of a switch block at the end has been a long-standing tradition in `C` -like languages, and it is a tradition worth respecting for the clarity it provides.
 
 
 ```java

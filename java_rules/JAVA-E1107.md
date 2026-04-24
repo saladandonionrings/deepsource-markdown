@@ -1,15 +1,18 @@
 # Avoid using deprecated `Thread` methods
-**ID:** `JAVA-E1107` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1107)
+**ID:** `JAVA-E1107` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1107)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Deprecated methods from `java.lang.Thread` such as `Thread.stop()` or `Thread.suspend()` should not be used as they can cause instability.
 
-By using methods like `Thread.stop()`, any locks held within the affected thread will be released at once, possibly leading to inconsistencies and logical bugs.
+By using methods like `Thread.stop()` , any locks held within the affected thread will be released at once, possibly leading to inconsistencies and logical bugs.
 
 This issue will be raised upon usage of the following methods:
 
-* [`Thread.stop()`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#stop())* [`Thread.suspend()`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#suspend())* [`Thread.resume()`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#resume())
+* [ `Thread.stop()` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#stop())
+* [ `Thread.suspend()` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#suspend())
+* [ `Thread.resume()` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#resume())
+
 
 ## Bad Practice
 
@@ -71,7 +74,7 @@ class Worker implements Runnable {
     }
 }
 ```
-You could also use [`Thread.interrupt()`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupt()), which will set the interrupted state of the thread in question, to notify the target thread.
+You could also use [ `Thread.interrupt()` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupt()) , which will set the interrupted state of the thread in question, to notify the target thread.
 
 The main thread can call `Thread.interrupt()` to serve as a stop notification.
 
@@ -110,5 +113,5 @@ class Worker implements Runnable {
     }
 }
 ```
-This will also cause side effects such as throwing an [`InterruptedException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InterruptedException.html) if the thread is currently blocked on a call to `wait()`, `join()` or `sleep()`, so be careful.
+This will also cause side effects such as throwing an [ `InterruptedException` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InterruptedException.html) if the thread is currently blocked on a call to `wait()` , `join()` or `sleep()` , so be careful.
 

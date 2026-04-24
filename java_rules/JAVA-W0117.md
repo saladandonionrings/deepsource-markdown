@@ -1,7 +1,7 @@
 # Class overrides `hashCode` but not `equals`
-**ID:** `JAVA-W0117` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0117)
+**ID:** `JAVA-W0117` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0117)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This class defines a `hashCode` method but inherits its `equals` method from `java.lang.Object` (which defines equality by comparing object references). Although this will probably satisfy the contract that equal objects must have equal hashcodes, it is probably not what was intended by overriding the `hashCode` method.
 

@@ -1,7 +1,7 @@
 # Inject annotations on abstract class constructors have no effect
-**ID:** `JAVA-W1084` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1084)
+**ID:** `JAVA-W1084` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1084)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 The constructor of an abstract class can never be called directly by the dependency injection framework, meaning any injection annotations applied to it will not be considered. Remove the annotation.
 

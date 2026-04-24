@@ -1,7 +1,7 @@
 # Prepared statements must not be generated from dynamically created strings
-**ID:** `JAVA-S1016` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1016)
+**ID:** `JAVA-S1016` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1016)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 The code creates an SQL prepared statement from a `String` that was formed dynamically. This may be vulnerable to SQL injection attacks.
 
@@ -44,7 +44,8 @@ SELECT * FROM users
 ## Recommended
 There are a number of strategies that could prevent this:
 
-* The`table`parameter could be checked against a whitelist to ensure only valid table names are accepted
+* The `table` parameter could be checked against a whitelist to ensure only valid table names are accepted
+
 
 ```java
 String table = request.getParameter("table");
@@ -55,7 +56,8 @@ if (!whitelist.contains(table)) {
     // ...
 }
 ```
-* Escape any special characters in user input. Note that if this is not done properly, you may end up with a situation such as[this](https://blog.jdriven.com/2017/10/sql-injection-prepared-statement-not-enough/)...
+* Escape any special characters in user input. Note that if this is not done properly, you may end up with a situation such as [this](https://blog.jdriven.com/2017/10/sql-injection-prepared-statement-not-enough/) ...
+
 Here's an example usage of ESAPI with Oracle SQL (Example taken from OWASP's SQL Injection Cheat Sheet):
 
 
@@ -67,6 +69,7 @@ String query = "SELECT user_id FROM user_data WHERE user_name = '"
     + ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
 ```
 * Predefine allowed values as constants, and make the client send an identifier (an integer for example) that is mapped to one of the allowed values.
+
 
 ```java
 int querySelector = Integer.parseInt(request.getParameter("query"));

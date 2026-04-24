@@ -1,9 +1,9 @@
 # Map compute methods cannot be used to create null valued entries
-**ID:** `JAVA-W1011` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1011)
+**ID:** `JAVA-W1011` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1011)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
-When `Map`'s `compute`, `computeIfAbsent` and `computeIfPresent` methods are provided with a lambda that always returns `null`, they will fail to create new entries for the provided key.
+When `Map` 's `compute` , `computeIfAbsent` and `computeIfPresent` methods are provided with a lambda that always returns `null` , they will fail to create new entries for the provided key.
 
 This may go against the expected behavior. Consider changing this code to directly insert a key with a null value instead.
 

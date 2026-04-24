@@ -1,13 +1,13 @@
 # Impossible downcast of `toArray` result detected
-**ID:** `JAVA-E0386` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0386)
+**ID:** `JAVA-E0386` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0386)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-Attempting to cast the result of `Collection.toArray()` to any type other than `Object[]` will always fail, resulting in a `ClassCastException`.
+Attempting to cast the result of `Collection.toArray()` to any type other than `Object[]` will always fail, resulting in a `ClassCastException` .
 
 
 ## Bad Practice
-This code is casting the result of calling `Collection.toArray()` to a subtype of `Object[]`, as in:
+This code is casting the result of calling `Collection.toArray()` to a subtype of `Object[]` , as in:
 
 
 ```java
@@ -15,7 +15,7 @@ String[] getAsArray(Collection<String> c) {
     return (String[]) c.toArray();
 }
 ```
-This will usually fail by throwing a `ClassCastException`. The `toArray()` method of almost all collections returns an `Object[]`. They can't really do anything else, since the `Collection` object does not have any way to determine its generic type.
+This will usually fail by throwing a `ClassCastException` . The `toArray()` method of almost all collections returns an `Object[]` . They can't really do anything else, since the `Collection` object does not have any way to determine its generic type.
 
 
 ## Recommended
@@ -27,5 +27,5 @@ c.toArray(new String[0]);
 ```
 
 ## Exceptions
-There is one common/known exception to this. The toArray() method of lists returned by `Arrays.asList(...)` will return a covariantly typed array. For example, `Arrays.asArray(new String[] { "a" }).toArray()` will return a `String []` instead of an `Object []`.
+There is one common/known exception to this. The toArray() method of lists returned by `Arrays.asList(...)` will return a covariantly typed array. For example, `Arrays.asArray(new String[] { "a" }).toArray()` will return a `String []` instead of an `Object []` .
 

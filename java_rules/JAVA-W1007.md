@@ -1,7 +1,7 @@
 # Fields must not shadow other fields with the same name from super classes
-**ID:** `JAVA-W1007` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1007)
+**ID:** `JAVA-W1007` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1007)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This field appears to have the same name as a field in a super class.
 

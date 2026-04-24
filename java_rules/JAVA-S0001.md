@@ -1,9 +1,9 @@
 # `@OverridingMethodsMustInvokeSuper` annotation in super method is ignored by overriding method
-**ID:** `JAVA-S0001` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0001)
+**ID:** `JAVA-S0001` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0001)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-The super method is annotated with `@OverridingMethodsMustInvokeSuper`, but the overriding method isn't calling the super method.
+The super method is annotated with `@OverridingMethodsMustInvokeSuper` , but the overriding method isn't calling the super method.
 
 This can cause bugs since there may be logic that depends on the super method being called, hence the super method being marked with the `@OverridingMethodsMustInvokeSuper` annotation.
 

@@ -1,7 +1,7 @@
 # Unsynchronized lazy initialization of static value detected
-**ID:** `JAVA-E1053` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1053)
+**ID:** `JAVA-E1053` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1053)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 A static field has been lazy initialized without any synchronization used. This will allow race conditions to occur if the field's getter is called on multiple threads at once.
 
@@ -22,7 +22,7 @@ public class UnsynchronizedLazyInit {
     }
 }
 ```
-Here, if two threads were to call `getResource()` while `u` were `null`, both threads would attempt to assign a new `SomeResource` instance to `u`. In this scenario, one of the threads is likely to overwrite the value of `u` set in the other thread.
+Here, if two threads were to call `getResource()` while `u` were `null` , both threads would attempt to assign a new `SomeResource` instance to `u` . In this scenario, one of the threads is likely to overwrite the value of `u` set in the other thread.
 
 
 ## Recommended

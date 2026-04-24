@@ -1,7 +1,7 @@
 # Method superfluously delegates to parent class method
-**ID:** `JAVA-W1016` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1016)
+**ID:** `JAVA-W1016` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1016)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This method appears to only call its superclass implementation, while directly passing its parameters to the super method. This method can be removed, as it provides no additional value.
 

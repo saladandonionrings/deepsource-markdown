@@ -1,7 +1,7 @@
 # Waiting with two locks held is likely to cause a deadlock
-**ID:** `JAVA-E0139` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0139)
+**ID:** `JAVA-E0139` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0139)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Waiting on a monitor while two locks are held may cause deadlock. This can also happen with `Lock` and `Condition` primitives from the `java.util.concurrent` package.
 
@@ -25,7 +25,7 @@ synchronized(obj1) {
     // ...
 }
 ```
-Waiting on `obj2` does not release the lock on `obj1`. If any other code locks `obj2` before locking `obj1`, a deadlock will occur.
+Waiting on `obj2` does not release the lock on `obj1` . If any other code locks `obj2` before locking `obj1` , a deadlock will occur.
 
 Similarly, it is not a good idea to hold multiple locks and call `await` on a `Condition` variable:
 
@@ -48,7 +48,7 @@ c.await();
 l2.unlock();
 l.unlock();
 ```
-Calling `c.await()` will only release `l`, not `l2`. Performing a wait only releases the lock associated with the wait operation, not any other locks.
+Calling `c.await()` will only release `l` , not `l2` . Performing a wait only releases the lock associated with the wait operation, not any other locks.
 
 
 ## Recommended

@@ -1,7 +1,7 @@
 # Cipher does not support integrity verification
-**ID:** `JAVA-S1005` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1005)
+**ID:** `JAVA-S1005` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1005)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 The ciphertext produced is susceptible to alteration by an adversary. This means that the cipher provides no way to detect that the data has been tampered with. If the ciphertext can be controlled by an attacker, it could be altered without detection.
 
@@ -9,7 +9,11 @@ The solution is to use a cipher that includes a Hash-based Message Authenticatio
 
 The following modes are vulnerable because they don't provide an HMAC:
 
-* CBC* OFB* CTR* ECB
+* CBC
+* OFB
+* CTR
+* ECB
+
 
 ## Bad Practice
 

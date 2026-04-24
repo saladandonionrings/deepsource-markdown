@@ -1,9 +1,9 @@
 # `equals` method defined for enumeration
-**ID:** `JAVA-E0096` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0096)
+**ID:** `JAVA-E0096` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0096)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-This `enum` defines an overload for the `equals` method using the `enum`'s own class type. The `equals()` method of an `enum` is not meant to be overloaded (or overridden), and doing so may cause weird bugs to crop up when values of this `enum` are compared.
+This `enum` defines an overload for the `equals` method using the `enum` 's own class type. The `equals()` method of an `enum` is not meant to be overloaded (or overridden), and doing so may cause weird bugs to crop up when values of this `enum` are compared.
 
 Equality on enumerations is defined using object identity, that is, the address of the object. This works because each variant of an `enum` is essentially a static final instance of that `enum` class with data corresponding to the declared variant. All usages of an `enum's variants point to the same set of static constants.
 

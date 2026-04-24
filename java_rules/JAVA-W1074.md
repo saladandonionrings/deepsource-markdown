@@ -1,7 +1,7 @@
 # Multiple `@Inject` constructors found
-**ID:** `JAVA-W1074` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1074)
+**ID:** `JAVA-W1074` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1074)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 There should only be one constructor that is annotated with `@Inject` in a class.
 

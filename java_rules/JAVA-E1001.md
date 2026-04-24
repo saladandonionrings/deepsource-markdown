@@ -1,7 +1,7 @@
 # Arguments to String.format must match the provided format string
-**ID:** `JAVA-E1001` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1001)
+**ID:** `JAVA-E1001` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1001)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 `String.format` accepts arguments based on the content of the format string provided to it. If the format string's specifiers do not match the rest of the arguments provided, `String.format` will raise an exception at runtime.
 

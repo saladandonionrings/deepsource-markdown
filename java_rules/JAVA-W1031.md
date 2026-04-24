@@ -1,7 +1,7 @@
 # Sealed class/interface permitted types need not be listed if they are declared in the same file
-**ID:** `JAVA-W1031` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1031)
+**ID:** `JAVA-W1031` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1031)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A sealed class/interface does not need to declare a `permits` clause if all its subtypes are declared within the same file as the sealed type.
 

@@ -1,7 +1,7 @@
 # Servlets should not use mutable fields without synchronization
-**ID:** `JAVA-E0128` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0128)
+**ID:** `JAVA-E0128` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0128)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 A web server generally only creates one instance of servlet or JSP class (i.e., treats the class as a Singleton), and will have multiple threads invoke methods on that instance to service multiple simultaneous requests.
 
@@ -26,7 +26,7 @@ class MyServlet extends HttpServlet {
     }
 }
 ```
-Accessing such variables without synchronizing on them could allow `ConcurrentModificationException`s. This could also result in race conditions occurring between threads that modify the concerned field.
+Accessing such variables without synchronizing on them could allow `ConcurrentModificationException` s. This could also result in race conditions occurring between threads that modify the concerned field.
 
 
 ## Recommended

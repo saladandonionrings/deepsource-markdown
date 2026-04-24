@@ -1,7 +1,7 @@
 # Possibly useful method return value is ignored
-**ID:** `JAVA-W0243` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0243)
+**ID:** `JAVA-W0243` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0243)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This code calls a method and ignores the return value.
 

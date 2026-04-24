@@ -1,7 +1,7 @@
 # Finalizers must not be explicitly invoked
-**ID:** `JAVA-E0094` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0094)
+**ID:** `JAVA-E0094` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0094)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This method explicitly invokes an object's `finalize` method. Because finalizer methods are supposed to be executed once, and only by the JVM's internal code, this is a bad idea.
 
@@ -15,7 +15,7 @@ If a connected set of objects is currently being finalized, there is a chance th
 
 
 ## Recommended
-Remove the call to `finalize`.
+Remove the call to `finalize` .
 
 **Note:** Finalizers are deprecated since Java 9.
 

@@ -1,7 +1,7 @@
 # Undocumented method found
-**ID:** `JAVA-D1001` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-D1001)
+**ID:** `JAVA-D1001` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-D1001)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Documentation](https://img.shields.io/badge/type-documentation-lightgrey)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Documentation](https://img.shields.io/badge/type-documentation-lightgrey)
 
 This method does not have any documentation.
 

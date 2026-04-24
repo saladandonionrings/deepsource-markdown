@@ -1,7 +1,7 @@
 # Undocumented constructor found
-**ID:** `JAVA-D1002` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-D1002)
+**ID:** `JAVA-D1002` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-D1002)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Documentation](https://img.shields.io/badge/type-documentation-lightgrey)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Documentation](https://img.shields.io/badge/type-documentation-lightgrey)
 
 This constructor does not have any documentation.
 

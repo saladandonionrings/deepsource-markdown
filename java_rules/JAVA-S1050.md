@@ -1,7 +1,7 @@
 # Non-final static fields should not be public
-**ID:** `JAVA-S1050` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1050)
+**ID:** `JAVA-S1050` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1050)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 This code contains a public static field which is not final, or is mutable even when declared as final.
 
@@ -54,7 +54,7 @@ public final int getNumRetries() {
     return NUM_RETRIES;
 }
 ```
-If you also need to be able to set the value, make sure to sanitize the assigned data. You could check if the retry value is within a maximum permissible limit (`MAX_NUM_RETRIES`) and if the assigned value is below 0 or above the maximum limit, clamp that value to within those limits.
+If you also need to be able to set the value, make sure to sanitize the assigned data. You could check if the retry value is within a maximum permissible limit ( `MAX_NUM_RETRIES` ) and if the assigned value is below 0 or above the maximum limit, clamp that value to within those limits.
 
 
 ```java

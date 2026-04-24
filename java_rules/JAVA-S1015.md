@@ -1,7 +1,7 @@
 # Blowfish keys must be at least 128 bits long
-**ID:** `JAVA-S1015` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1015)
+**ID:** `JAVA-S1015` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1015)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 The Blowfish cipher supports key sizes from 32 bits to 448 bits. A small key size makes the ciphertext vulnerable to brute force attacks.
 

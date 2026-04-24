@@ -1,7 +1,7 @@
 # `System.runFinalizersOnExit`/`Runtime.runFinalizersOnExit` are unsafe and must not be used
-**ID:** `JAVA-E0061` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0061)
+**ID:** `JAVA-E0061` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0061)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Never call `System.runFinalizersOnExit` or `Runtime.runFinalizersOnExit` for any reason: they are among the most dangerous methods in the Java libraries. -- Joshua Bloch
 

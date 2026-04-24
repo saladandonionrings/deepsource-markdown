@@ -1,9 +1,9 @@
 # Bitwise operations should not be checked for sign
-**ID:** `JAVA-W1043` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1043)
+**ID:** `JAVA-W1043` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1043)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-Avoid checking the sign of bitwise operations. If you need to compare an expression to `0`, just do an equality check with `0`. Otherwise, consider being more explicit by performing a bitwise test of the most significant bit instead.
+Avoid checking the sign of bitwise operations. If you need to compare an expression to `0` , just do an equality check with `0` . Otherwise, consider being more explicit by performing a bitwise test of the most significant bit instead.
 
 Bitwise operations do not work well with comparison operations. This is because bitwise operations completely ignore the sign of any values involved, and do not produce results that agree with analogous arithmetic operations.
 

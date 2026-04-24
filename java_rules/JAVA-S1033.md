@@ -1,7 +1,7 @@
 # SMTP configurations should check SSL certificates for authenticity
-**ID:** `JAVA-S1033` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1033)
+**ID:** `JAVA-S1033` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S1033)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 JavaMail SMTP configurations should have secure SSL configurations.
 
@@ -11,7 +11,7 @@ It is recommended to explicitly enable SSL/TLS certificate checking to ensure co
 
 
 ## Bad Practice
-In this example, SMTP authentication is enabled for a JavaMail [session](https://javaee.github.io/javamail/docs/api/javax/mail/Session.html), but certificate checking is not.
+In this example, SMTP authentication is enabled for a JavaMail [session](https://javaee.github.io/javamail/docs/api/javax/mail/Session.html) , but certificate checking is not.
 
 
 ```java

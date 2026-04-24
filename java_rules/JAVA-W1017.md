@@ -1,7 +1,7 @@
 # Type parameter shadows another type
-**ID:** `JAVA-W1017` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1017)
+**ID:** `JAVA-W1017` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1017)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 Avoid giving type parameters the same name as other types, or naming types with the same names as type parameters.
 
@@ -11,7 +11,7 @@ In either case, it is possible that a type may have the same name as a type para
 
 
 ## Bad Practice
-Here, `java.lang.String` (which is always in scope) is shadowed by the type parameter `String`.
+Here, `java.lang.String` (which is always in scope) is shadowed by the type parameter `String` .
 
 
 ```java
@@ -37,7 +37,7 @@ class T {
 ```
 
 ## Recommended
-Type parameters are by convention named as single capital letters, such as `T`, or `V`. Similarly, types are in general descriptively named, and should not be named like type parameters.
+Type parameters are by convention named as single capital letters, such as `T` , or `V` . Similarly, types are in general descriptively named, and should not be named like type parameters.
 
 Ensure that type parameters do not have the same name as any imported or declared types in a file. Also ensure that you do not declare a type that could be shadowed by a type parameter; ensure that type names are descriptive.
 

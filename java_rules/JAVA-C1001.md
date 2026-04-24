@@ -1,7 +1,7 @@
 # Type names must begin with an uppercase letter
-**ID:** `JAVA-C1001` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-C1001)
+**ID:** `JAVA-C1001` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-C1001)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Style](https://img.shields.io/badge/type-style-blue)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Style](https://img.shields.io/badge/type-style-blue)
 
 Java naming conventions must be followed for all type names.
 

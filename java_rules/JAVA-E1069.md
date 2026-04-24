@@ -1,7 +1,7 @@
 # Enum fields should not be mutable
-**ID:** `JAVA-E1069` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1069)
+**ID:** `JAVA-E1069` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1069)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Avoid declaring public, non-final fields within enums.
 
@@ -27,7 +27,7 @@ enum SomeEnum {
     }
 }
 ```
-This enum has one public field, `pubField`. Now, consider what happens if we make use of this enum's variants:
+This enum has one public field, `pubField` . Now, consider what happens if we make use of this enum's variants:
 
 
 ```java
@@ -41,7 +41,7 @@ var1.pubField = "otherValue";
 // prints "otherValue"!
 System.out.println(SomeEnum.A.pubField);
 ```
-Modifying `pubField` from `var1` affects both the declaration as well as every other usage of `A`. This is because each enum variant is a singleton of its class, and only instances associated with variants can exist.
+Modifying `pubField` from `var1` affects both the declaration as well as every other usage of `A` . This is because each enum variant is a singleton of its class, and only instances associated with variants can exist.
 
 
 ## Recommended

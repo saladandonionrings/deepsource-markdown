@@ -1,11 +1,11 @@
 # `Iterable<Path>` is errorprone and should be replaced with `Collection<Path>`
-**ID:** `JAVA-E1096` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1096)
+**ID:** `JAVA-E1096` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1096)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-Avoid using `Iterable<Path>` to represent collections of `Path`s.
+Avoid using `Iterable<Path>` to represent collections of `Path` s.
 
-[`java.nio.file.Path`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html) implements `Iterable` in and of itself, which allows paths to be treated as lists of path components. To avoid confusing a single `Path` object for a `List` (or whatever other data structure) of `Path`s, use `Collection` or a similar generic type instead.
+[ `java.nio.file.Path` ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html) implements `Iterable` in and of itself, which allows paths to be treated as lists of path components. To avoid confusing a single `Path` object for a `List` (or whatever other data structure) of `Path` s, use `Collection` or a similar generic type instead.
 
 
 ## Bad Practice
@@ -22,7 +22,7 @@ for (Path toFile : paths) {
 ```
 
 ## Recommended
-To avoid accidentally allowing the usage of a single `Path` value where many are expected, you can use `Collection` classes, such as `List`, `Set`, or even `Collection` itself.
+To avoid accidentally allowing the usage of a single `Path` value where many are expected, you can use `Collection` classes, such as `List` , `Set` , or even `Collection` itself.
 
 
 ```java

@@ -1,7 +1,7 @@
 # Class doesn't override `equals` from superclass
-**ID:** `JAVA-W0100` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0100)
+**ID:** `JAVA-W0100` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0100)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This class extends a class that defines `equals` and adds fields, but doesn't define `equals` itself. Thus, equality on instances of this class will ignore its identity and its added fields.
 
@@ -24,7 +24,7 @@ class Child extends Parent {
   int field2 = 5;
 }
 ```
-Here, comparison of `Child` objects will use the `equals` method implemented in `Parent`.
+Here, comparison of `Child` objects will use the `equals` method implemented in `Parent` .
 
 Be sure this is what is intended, and that you don't need to override the `equals` method. Even if you don't need to override the `equals` method, consider overriding it anyway to document the fact that equality for the subclass works the same way as equality for the superclass.
 

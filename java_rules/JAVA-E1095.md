@@ -1,7 +1,7 @@
 # Methods annotated as non-nullable should not return null values
-**ID:** `JAVA-E1095` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1095)
+**ID:** `JAVA-E1095` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1095)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 A method that is marked with annotations such as `@Nonnull` should not return explicit null values.
 

@@ -1,7 +1,7 @@
 # Anonymous classes should not contain unused non-overridden methods
-**ID:** `JAVA-W1039` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1039)
+**ID:** `JAVA-W1039` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1039)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A non-overridden method is defined within an anonymous class, which is not used within that class at all.
 
@@ -9,7 +9,7 @@ Such a method cannot be called outside of the anonymous class in most cases, mea
 
 Because anonymous classes have no names, there is no way at runtime for code outside an anonymous class to resolve any methods declared within them. The only way for an anonymous class to be interacted with by any other object is to override methods that exist in the parent class/interface(s) of the anonymous class.
 
-Do note that there are still a number of ways to access such methods, through reflection, and other [tricks](https://stackoverflow.com/questions/10800678/can-i-access-new-methods-in-anonymous-inner-class-with-some-syntax).
+Do note that there are still a number of ways to access such methods, through reflection, and other [tricks](https://stackoverflow.com/questions/10800678/can-i-access-new-methods-in-anonymous-inner-class-with-some-syntax) .
 
 
 ## Bad Practice

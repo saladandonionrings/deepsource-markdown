@@ -1,7 +1,7 @@
 # Method uses the same code for multiple branches
-**ID:** `JAVA-W0411` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0411)
+**ID:** `JAVA-W0411` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0411)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This method seems to have the same code for multiple branch statements.
 

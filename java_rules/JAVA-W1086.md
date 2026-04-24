@@ -1,7 +1,7 @@
 # `switch` statements with only 2 branches should be `if` statements instead
-**ID:** `JAVA-W1086` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1086)
+**ID:** `JAVA-W1086` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1086)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 `switch` statements that have only two arms can be better represented as `if` statements.
 

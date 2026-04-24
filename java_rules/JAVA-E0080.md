@@ -1,7 +1,7 @@
 # Incorrect combination of `Math.max` and `Math.min`
-**ID:** `JAVA-E0080` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0080)
+**ID:** `JAVA-E0080` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0080)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 This code tries to limit the value bounds using a construct such as:
 

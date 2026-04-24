@@ -1,20 +1,22 @@
 # Reference to mutable object which is returned may expose internal representation of data
-**ID:** `JAVA-S0132` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0132)
+**ID:** `JAVA-S0132` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0132)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Returning a reference to a mutable value stored in any of an object's fields exposes the internal state of the object. This could lead to an injection vulnerability.
 
-It may be possible to modify internal state of the object from any code that uses it through a mutable field which can be accessed publicly. This issue is common in cases where Java arrays (`Object[]`) are passed around directly.
+It may be possible to modify internal state of the object from any code that uses it through a mutable field which can be accessed publicly. This issue is common in cases where Java arrays ( `Object[]` ) are passed around directly.
 
 If any of the following situations apply, you may want to structure this code differently:
 
-* Instances of the referenced field are accessed by untrusted code* Unchecked changes to the referenced field would compromise security or other important properties
+* Instances of the referenced field are accessed by untrusted code
+* Unchecked changes to the referenced field would compromise security or other important properties
+
 Returning a new copy of the field is a better approach in many situations. If the field's class type is controlled by you, consider implementing the `Cloneable` interface for that field, or create a copy constructor for it.
 
 
 ## Bad Practice
-Consider the following class, with a private `String[]` value, `ipAddresses`:
+Consider the following class, with a private `String[]` value, `ipAddresses` :
 
 
 ```java
@@ -45,7 +47,7 @@ Insecure insecure = new Insecure();
 
 String[] addrs = insecure.getIpAddresses();
 ```
-When we assign to `addrs`, a local variable, we see something surprising:
+When we assign to `addrs` , a local variable, we see something surprising:
 
 
 ```java
@@ -65,7 +67,7 @@ public String[] getIpAddresses() {
     return Arrays.copyOf(this.ipAddresses);
 }
 ```
-If you are copying objects, you have a choice between using a copy contructor if the class provides it, or if the class implements `Cloneable`, the class's `clone` method:
+If you are copying objects, you have a choice between using a copy contructor if the class provides it, or if the class implements `Cloneable` , the class's `clone` method:
 
 
 ```java

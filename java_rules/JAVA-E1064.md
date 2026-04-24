@@ -1,7 +1,7 @@
 # Local variable is never written to
-**ID:** `JAVA-E1064` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1064)
+**ID:** `JAVA-E1064` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1064)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 A local variable of a method or constructor has been found to have no writes to it.
 

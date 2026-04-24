@@ -1,7 +1,7 @@
 # Prepared statements must not be generated from dynamically created strings
-**ID:** `JAVA-S0083` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0083)
+**ID:** `JAVA-S0083` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-S0083)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 The code creates an SQL prepared statement from a `String` that was formed dynamically. This may be vulnerable to SQL injection attacks.
 
@@ -40,7 +40,10 @@ SELECT * FROM users
 ```
 There are a number of strategies that could prevent this:
 
-* The`table`parameter could be checked against a whitelist to ensure only valid table names are accepted* Escape any special characters in user input. Note that if this is not done properly, you may end up with a situation such as[this](https://blog.jdriven.com/2017/10/sql-injection-prepared-statement-not-enough/)...* Predefine allowed values as constants, and make the client send an identifier (an integer for example) that is mapped to one of the allowed values.
+* The `table` parameter could be checked against a whitelist to ensure only valid table names are accepted
+* Escape any special characters in user input. Note that if this is not done properly, you may end up with a situation such as [this](https://blog.jdriven.com/2017/10/sql-injection-prepared-statement-not-enough/) ...
+* Predefine allowed values as constants, and make the client send an identifier (an integer for example) that is mapped to one of the allowed values.
+
 
 ## Exceptions
 If there is a solid guarantee that such an attack cannot occur, this issue can be safely ignored.

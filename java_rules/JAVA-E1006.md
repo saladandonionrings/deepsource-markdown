@@ -1,11 +1,11 @@
 # Using week year (YYYY) in place of year (yyyy) may produce incorrect results
-**ID:** `JAVA-E1006` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1006)
+**ID:** `JAVA-E1006` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1006)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 Java's date formatting can be used to represent a date in terms of either the week of the year or in terms of the day and month, as usual.
 
-The format used to represent years in terms of the week is `YYYY`. It is quite easy to accidentally mix up the normal format for years (`yyyy`) with the week year format (`YYYY`).
+The format used to represent years in terms of the week is `YYYY` . It is quite easy to accidentally mix up the normal format for years ( `yyyy` ) with the week year format ( `YYYY` ).
 
 Such a mixup will completely throw off any attempt at parsing dates, and will also produce inconsistent output when formatting dates.
 
@@ -31,7 +31,7 @@ On the new year, dates work a bit differently when formatted in terms of the wee
 
 
 ## Bad Practice
-With `SimpleDateFormat`:
+With `SimpleDateFormat` :
 
 
 ```java
@@ -40,7 +40,7 @@ Date badDate = new SimpleDateFormat("YYYY-MM-dd").parse("2021-05-02); // This da
 Date goodDate = new SimpleDateFormat("yyyy-MM-dd").parse("2020-12-28");
 String badDateStr = new SimpleDateFormat("YYYY-MM-dd).format(goodDate); // dateStr = "2021-12-28"
 ```
-Using `DateTimeFormatter`:
+Using `DateTimeFormatter` :
 
 
 ```java

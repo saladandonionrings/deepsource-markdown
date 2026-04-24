@@ -1,7 +1,7 @@
 # Unused private field detected
-**ID:** `JAVA-W1025` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1025)
+**ID:** `JAVA-W1025` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W1025)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 A private field which is not referenced anywhere in this file was detected.
 

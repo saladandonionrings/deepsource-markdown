@@ -1,7 +1,7 @@
 # Audit: Enabling JavaScript within a web view is a security risk
-**ID:** `JAVA-A1029` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1029)
+**ID:** `JAVA-A1029` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-A1029)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Security](https://img.shields.io/badge/type-security-red)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Security](https://img.shields.io/badge/type-security-red)
 
 Do not grant JavaScript execution permissions to a web view unless absolutely required.
 

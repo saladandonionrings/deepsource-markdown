@@ -1,7 +1,7 @@
 # Constructor of non-final class starts a thread
-**ID:** `JAVA-E0208` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0208)
+**ID:** `JAVA-E0208` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0208)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
 The constructor starts a thread. This is likely to go wrong if the class is ever extended/subclassed, since the thread will be started before the subclass constructor is executed and will probably cause unexpected behavior.
 

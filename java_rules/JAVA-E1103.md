@@ -1,11 +1,11 @@
 # Closeable values should not be injected via `@Provides` annotated methods
-**ID:** `JAVA-E1103` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1103)
+**ID:** `JAVA-E1103` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E1103)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-Avoid marking methods that return [`Closeable`](https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html) with any dependency injection annotations such as `@Provides` or `@Inject`, as this could cause resource management problems.
+Avoid marking methods that return [ `Closeable` ](https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html) with any dependency injection annotations such as `@Provides` or `@Inject` , as this could cause resource management problems.
 
-This issue respects suppression via `@SuppressWarnings("CloseableProvides")`.
+This issue respects suppression via `@SuppressWarnings("CloseableProvides")` .
 
 
 ## Bad Practice
@@ -37,7 +37,7 @@ class DependencyComponent {
 ```
 If multiple instances of `DependencyComponent` were to exist, `provideFileStream()` would be called that many times as well, meaning there would be multiple different file streams pointing to the same file. It is possible that the application could run out of file descriptors if there are too many streams opened.
 
-If the file stream is supposed to be a singleton (if `provideFileStream()` were marked with `@Singleton`), this would mean the same stream is shared across multiple instances of `DependencyComponent`. This would be a different kind of problem; which instance of `DependencyComponent` would be responsible for closing the singleton?
+If the file stream is supposed to be a singleton (if `provideFileStream()` were marked with `@Singleton` ), this would mean the same stream is shared across multiple instances of `DependencyComponent` . This would be a different kind of problem; which instance of `DependencyComponent` would be responsible for closing the singleton?
 
 For a more in-depth exploration of the problem, see [this page](https://errorprone.info/bugpattern/CloseableProvides) from ErrorProne.
 

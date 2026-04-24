@@ -1,7 +1,7 @@
 # Protected fields in a final class are useless
-**ID:** `JAVA-W0417` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0417)
+**ID:** `JAVA-W0417` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-W0417)
 
-![Minor](https://img.shields.io/badge/severity-minor-yellow)![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
+![Minor](https://img.shields.io/badge/severity-minor-yellow) ![Anti-pattern](https://img.shields.io/badge/type-anti_pattern-purple)
 
 This class is declared to be final, but declares fields to be protected. Such code is confusing, since protected fields in final classes are effectively the same as private fields.
 

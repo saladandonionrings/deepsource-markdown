@@ -1,7 +1,7 @@
 # `toString` invoked on a string value is useless
-**ID:** `JAVA-P0064` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P0064)
+**ID:** `JAVA-P0064` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-P0064)
 
-![Major](https://img.shields.io/badge/severity-major-orange)![Performance](https://img.shields.io/badge/type-performance-white)
+![Major](https://img.shields.io/badge/severity-major-orange) ![Performance](https://img.shields.io/badge/type-performance-white)
 
 Calling `String.toString` is a redundant operation. Just use the string directly.
 

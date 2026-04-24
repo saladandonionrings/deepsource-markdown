@@ -1,11 +1,11 @@
 # Method attempts to access a result set field with index 0
-**ID:** `JAVA-E0343` | **Link:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0343)
+**ID:** `JAVA-E0343` | **Lien:** [DeepSource](https://deepsource.com/directory/java/issues/JAVA-E0343)
 
-![Critical](https://img.shields.io/badge/severity-critical-red)![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
+![Critical](https://img.shields.io/badge/severity-critical-red) ![Bug Risk](https://img.shields.io/badge/type-bug_risk-green)
 
-A call to a `getXXX` or `updateXXX` method of a result set was made where the field index is `0`. As `ResultSet` fields start at index `1`, this is always a mistake.
+A call to a `getXXX` or `updateXXX` method of a result set was made where the field index is `0` . As `ResultSet` fields start at index `1` , this is always a mistake.
 
-Using a 0 index with `ResultSet`'s getter and update methods will only trigger an `SQLException`.
+Using a 0 index with `ResultSet` 's getter and update methods will only trigger an `SQLException` .
 
 
 ## Bad Practice
